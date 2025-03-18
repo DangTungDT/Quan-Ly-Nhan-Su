@@ -149,6 +149,46 @@ create table NghiPhep
 )
 go
 
+--Create table DuAn
+create table DuAn
+(
+	id int identity(1,1) not null,
+	TenDuAn nvarchar(100),
+	MoTa text,
+	NgayBatDau date,
+	NgayKetThuc date,
+	TrangThai nvarchar(20),
+	NgayTao date,
+	primary key(id),
+	constraint chk_NgayKetThucDuAn check (NgayBatDau <= NgayKetThuc)
+)
+go
+--Create table DuAn_NhanVien
+create table DuAn_NhanVien
+(
+	idNhanVien int not null,
+	idDuAn int not null,
+	VaiTroNhanVien nvarchar(100),
+	NgayThamGia date,
+	NgayTao date,
+	primary key(idNhanVien, idDuAn)
+)
+go
+
+--Create table DanhGiaNhanVien
+Create table DanhGiaNhanVien
+(
+	id int identity(1,1) not null,
+	DiemSo int,
+	NhanXet text,
+	ngayTao date,
+	idNhanVien int,
+	idNguoiDanhGia int,
+	primary key(id),
+	constraint chk_NguoiDanhGia check (idNhanVien != idNguoiDanhGia)
+)
+go
+
 
 ----Create Foreign Key constraint
 --Table NhanVien
@@ -190,4 +230,14 @@ add constraint fk_KhenThuong_KTNV foreign key(idKhenThuong) references KhenThuon
 	constraint fk_NhanVien_KTNV foreign key(idNhanVien) references NhanVien(id)
 go
 
+--Table DuAn_NhanVien
+alter table DuAn_NhanVien
+add constraint fk_DuAn_DANV foreign key(idDuAn) references DuAn(id),
+	constraint fk_NhanVien_DANV foreign key(idNhanVien) references NhanVien(id)
+go
 
+--Table DanhGiaNhanVien
+alter table DanhGiaNhanVien
+add constraint fk_NV1_DGNV foreign key(idNhanVien) references NhanVien(id),
+	constraint fk_NV2_DGNV foreign key(idNguoiDanhGia) references NhanVien(id)
+go
