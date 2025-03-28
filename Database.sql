@@ -10,6 +10,7 @@ go
 set dateformat dmy
 go
 
+--Table 1
 --Create Table ChucVu
 create table ChucVu
 (
@@ -21,6 +22,7 @@ create table ChucVu
 )
 go
 
+--Table 2
 --Create Table PhongBan
 create table PhongBan
 (
@@ -31,6 +33,7 @@ create table PhongBan
 )
 go
 
+--Table 3
 --Create table Luong
 create table Luong
 (
@@ -41,6 +44,7 @@ create table Luong
 )
 go
 
+--Table 4
 --Create table NhanVien 
 create table NhanVien
 (
@@ -59,6 +63,7 @@ create table NhanVien
 )
 go
 
+--Table 5
 --Create table TaiKhoan
 create table TaiKhoan
 (
@@ -71,6 +76,7 @@ create table TaiKhoan
 )
 go
 
+--Table 6
 --Create table ChamCong
 create table ChamCong
 (
@@ -81,6 +87,7 @@ create table ChamCong
 )
 go
 
+--Table 7
 --Create table KhenThuong
 create table KhenThuong
 (
@@ -92,6 +99,7 @@ create table KhenThuong
 )
 go
 
+--Table 8
 --Create table KhenThuong_NhanVien
 Create table KhenThuong_NhanVien
 (
@@ -101,6 +109,7 @@ Create table KhenThuong_NhanVien
 )
 go
 
+--Table 9
 --Create table HopDongLaoDong
 create table HopDongLaoDong
 (
@@ -115,6 +124,7 @@ create table HopDongLaoDong
 )
 go
 
+--Table 10
 --Create table KyLuat
 create table KyLuat
 (
@@ -126,6 +136,7 @@ create table KyLuat
 )
 go
 
+--Table 11
 --Create table KyLuat_NhanVien
 Create table KyLuat_NhanVien
 (
@@ -135,6 +146,7 @@ Create table KyLuat_NhanVien
 )
 go
 
+--Table 12
 --Create table NghiPhep
 create table NghiPhep
 (
@@ -149,6 +161,7 @@ create table NghiPhep
 )
 go
 
+--Table 13
 --Create table DuAn
 create table DuAn
 (
@@ -163,6 +176,8 @@ create table DuAn
 	constraint chk_NgayKetThucDuAn check (NgayBatDau <= NgayKetThuc)
 )
 go
+
+--Table 14
 --Create table DuAn_NhanVien
 create table DuAn_NhanVien
 (
@@ -175,6 +190,7 @@ create table DuAn_NhanVien
 )
 go
 
+--Table 15
 --Create table DanhGiaNhanVien
 Create table DanhGiaNhanVien
 (
@@ -241,3 +257,79 @@ alter table DanhGiaNhanVien
 add constraint fk_NV1_DGNV foreign key(idNhanVien) references NhanVien(id),
 	constraint fk_NV2_DGNV foreign key(idNguoiDanhGia) references NhanVien(id)
 go
+
+
+
+
+----Chèn dữ liệu
+-- Chèn dữ liệu vào bảng ChucVu
+INSERT INTO ChucVu (TenChucVu, NgayNhan) VALUES
+(N'Tổng Giám đốc', GETDATE()),
+(N'Phó Giám đốc', GETDATE()),
+(N'Giám đốc Công nghệ (CTO)', GETDATE()),
+(N'Giám đốc Tài chính (CFO)', GETDATE()),
+(N'Giám đốc Nhân sự (CHRO)', GETDATE()),
+(N'Trưởng phòng Kỹ thuật', GETDATE()),
+(N'Trưởng phòng Marketing', GETDATE()),
+(N'Trưởng phòng Kinh doanh', GETDATE()),
+(N'Quản lý Dự án', GETDATE()),
+(N'Chuyên viên Phát triển Phần mềm', GETDATE()),
+(N'Trưởng phòng An ninh mạng', GETDATE()),
+(N'Trưởng phòng Nhân sự', GETDATE()),
+(N'Trưởng phòng Tài chính', GETDATE()),
+(N'Trưởng phòng Chăm sóc khách hàng', GETDATE()),
+(N'Trưởng phòng Hành chính', GETDATE()),
+(N'Nhân viên chính thức', GETDATE()),
+(N'Nhân viên thực tập', GETDATE());
+
+-- Chèn dữ liệu vào bảng PhongBan
+INSERT INTO PhongBan (TenPhongBan, Mota) VALUES
+('Phòng Kỹ thuật', 'Chuyên phát triển và duy trì hệ thống phần mềm, quản lý server và hạ tầng công nghệ.'),
+('Phòng Sản phẩm', 'Nghiên cứu, thiết kế và phát triển sản phẩm công nghệ mới.'),
+('Phòng Nhân sự', 'Quản lý tuyển dụng, đào tạo và phát triển nhân sự trong công ty.'),
+('Phòng Marketing', 'Lên chiến lược tiếp thị và quảng bá sản phẩm công nghệ.'),
+('Phòng Kinh doanh', 'Chăm sóc khách hàng và tìm kiếm cơ hội kinh doanh mới.'),
+('Phòng Tài chính', 'Quản lý tài chính, kế toán và ngân sách công ty.'),
+('Phòng Hành chính', 'Xử lý các công việc hành chính, hậu cần và quản lý văn phòng.'),
+('Phòng Chăm sóc khách hàng', 'Hỗ trợ, tư vấn và giải đáp thắc mắc của khách hàng.'),
+('Phòng An ninh mạng', 'Đảm bảo an toàn thông tin và bảo mật hệ thống.'),
+('Phòng Nghiên cứu & Phát triển', 'Nghiên cứu công nghệ mới và phát triển giải pháp sáng tạo.');
+
+-- Khai báo biến bảng để lưu ID lương
+DECLARE @LuongIds TABLE (id INT);
+
+-- Chèn dữ liệu vào bảng Luong và lưu ID vào biến bảng
+INSERT INTO Luong (SoTienLuong)
+OUTPUT INSERTED.id INTO @LuongIds
+SELECT TOP 10 ABS(CHECKSUM(NEWID())) % 10000000 + 5000000
+FROM master.dbo.spt_values;
+
+-- Khai báo danh sách tỉnh thành và quận
+DECLARE @TinhThanh TABLE (id INT IDENTITY(1,1), Que NVARCHAR(50));
+INSERT INTO @TinhThanh VALUES
+(N'Hà Nội'), (N'TP. Hồ Chí Minh'), (N'Đà Nẵng'), (N'Hải Phòng'), (N'Bình Dương'),
+(N'Quảng Ninh'), (N'Huế'), (N'Cần Thơ'), (N'Bắc Ninh'), (N'Nha Trang');
+
+DECLARE @QuanHCM TABLE (id INT IDENTITY(1,1), DiaChi NVARCHAR(100));
+INSERT INTO @QuanHCM VALUES
+(N'Quận 1'), (N'Quận 2'), (N'Quận 3'), (N'Quận 4'), (N'Quận 5'),
+(N'Quận 7'), (N'Quận 9'), (N'Quận 10'), (N'Quận Bình Thạnh'), (N'Quận Gò Vấp');
+
+-- Chèn dữ liệu vào bảng NhanVien
+INSERT INTO NhanVien (TenNhanVien, NgaySinh, DiaChi, Que, GioiTinh, Email, idChucVu, idLuong, idPhongBan)
+SELECT TOP 200 
+       'NhanVien' + CAST(ROW_NUMBER() OVER (ORDER BY NEWID()) AS NVARCHAR),
+       DATEADD(YEAR, -20 - (ABS(CHECKSUM(NEWID())) % 30), GETDATE()),
+       (SELECT TOP 1 DiaChi FROM @QuanHCM ORDER BY NEWID()),
+       (SELECT TOP 1 Que FROM @TinhThanh ORDER BY NEWID()),
+       CASE WHEN ABS(CHECKSUM(NEWID())) % 2 = 0 THEN N'Nam' ELSE N'Nữ' END,
+       'nhanvien' + CAST(ROW_NUMBER() OVER (ORDER BY NEWID()) AS NVARCHAR) + '@example.com',
+       (SELECT TOP 1 id FROM ChucVu ORDER BY NEWID()),
+       (SELECT TOP 1 id FROM @LuongIds ORDER BY NEWID()),
+       (SELECT TOP 1 id FROM PhongBan ORDER BY NEWID())
+FROM master.dbo.spt_values;
+
+
+--USE master;
+--ALTER DATABASE PersonnelManagement SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+--DROP DATABASE PersonnelManagement;
