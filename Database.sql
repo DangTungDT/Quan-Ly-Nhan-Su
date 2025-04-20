@@ -36,7 +36,7 @@ go
 create table Luong
 (
 	id int identity(1,1) not null,
-	SoTienLuong int not null,
+	SoTienLuong decimal(18,2) default 0,
 	primary key(id),
 	constraint chk_SoTienLuong check (SoTienLuong >= 0)
 )
@@ -204,10 +204,32 @@ Create table DanhGiaNhanVien
 )
 go
 
-
+--Table 16
+--Create table ChiTietLuong
+Create table ChiTietLuong
+(
+	id int identity(1,1) not null,
+	kyNhanLuong date,
+	soGioCongChuan decimal(8,2) default 208,
+	luongCoBan decimal(18,2) default 0,
+	donGiaTangCa decimal(18,2) not null default 50000,
+	gioTangCa decimal(5,2) not null default 0,
+	phuCap decimal(18,2) default 0,
+	tienBiTru decimal(18,2) default 0,
+	tongThuNhap as (luongCoBan + (donGiaTangCa * gioTangCa) +phuCap) PERSISTED,
+	thucLanh as ((luongCoBan + (donGiaTangCa * gioTangCa) +phuCap) - tienBiTru) PERSISTED,
+	ngayNhanLuong date not null default getdate(),
+	ghiChu nvarchar(255),
+	idLuong int,
+	idNhanVien varchar(10),
+)
 ----Create Foreign Key constraint
+--Table ChiTietLuong
+alter table ChiTietLuong
+add constraint fk_Luong_ChiTietLuong foreign key(idLuong) references Luong(id),
+	constraint fk_NhanVien_ChiTietLuong foreign key(idNhanVien) references NhanVien(id)
+go
 
-----Create Foreign Key constraint
 --Table NhanVien
 alter table NhanVien
 add constraint fk_ChucVu_NhanVien foreign key(idChucVu) references ChucVu(id),
@@ -336,6 +358,20 @@ insert into NhanVien(id,TenNhanVien, NgaySinh, DiaChi, Que, GioiTinh, Email, idC
 ('PGDHDQT01', N'Hoàng Nam Tiến', '11/12/1976',N'quận Bình Thạnh thành phố Hồ Chí Minh', N'Hà Nội', 'Nam', 'hoangnamtien@gmail.com', 'PGD', '5', 'HDQT')
 go
 
+--chèn dữ liệu bảng ChiTietLuong
+insert into ChiTietLuong(kyNhanLuong, soGioCongChuan, luongCoBan, donGiaTangCa, gioTangCa, phuCap, tienBiTru, ngayNhanLuong, ghiChu, idLuong, idNhanVien) values
+('1/1/2025', 208, 15000000, 100000, 50, 0, 200000, '5/1/2025', N'Cần cải thiện việc đi làm trễ', '4', 'TPCNTT01'),
+('1/2/2025', 208, 15000000, 100000, 0, 100000, 0, '5/2/2025', N'tốt', '4', 'TPCNTT01'),
+('1/3/2025', 208, 15000000, 100000, 20, 0, 0, '5/3/2025', N'tốt', '4', 'TPCNTT01'),
+('1/4/2025', 208, 15000000, 100000, 10, 0, 100000, '5/4/2025', N'trung bình', '4', 'TPCNTT01'),
+
+('1/1/2025', 208, 5000000, 500000, 20, 0, 0, '5/1/2025', N'tốt', '2', 'TPKD01'),
+('1/2/2025', 208, 5000000, 500000, 0, 0, 0, '5/2/2025', N'tốt', '2', 'TPKD01'),
+('1/3/2025', 208, 5000000, 500000, 20, 0, 0, '5/3/2025', N'tốt', '2', 'TPKD01'),
+('1/4/2025', 208, 5000000, 500000, 10, 0, 0, '5/4/2025', N'tốt', '2', 'TPKD01')
+go
+
+
 ------Create Foreign Key constraint
 ----Table PhongBan
 --alter table PhongBan
@@ -429,6 +465,8 @@ insert into HopDongLaoDong(NgayKy, NgayBatDau, NgayKetThuc, idNhanVien, MoTa) va
 ('1/1/2025', '15/1/2025', '15/1/2028', 'NVCNTT03', N'Hợp đồng có thời hạn'),
 ('1/1/2025', '15/1/2025', '15/1/2028', 'TPCNTT01', N'Hợp đồng có thời hạn')
 go
+
+
 
 --USE master;
 --ALTER DATABASE PersonnelManagement SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
