@@ -1,0 +1,90 @@
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\BLL.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DAL.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\BLL.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DAL.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\GUI.csproj.Up2Date
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DAL.dll.config
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DanhGiaNhanVien.resources
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.PhongBan.resources
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.NhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\BLL.dll
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\DAL.dll
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\DTO.dll
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\BLL.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\DAL.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\DAL.dll.config
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\bin\Debug\DTO.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.ChamCong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DangNhap.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DanhGiaNhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DuAn.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DuAn_NhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.ChucVu.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmChamCongNhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.KhenThuong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.KyLuat.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Luong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.HopDongLaoDong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.NghiPhep.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.NhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.PhongBan.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.TaiKhoan.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.XemDanhSanhNhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\GUI.csproj.Up2Date
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver.3.3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.ChamCong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DangNhap.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DanhGiaNhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DuAn.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DuAn_NhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.ChucVu.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmChamCongNhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmChiTietLuong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMainGD.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMainNhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMainTruongPhong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.KhenThuong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.KyLuat.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Luong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.HopDongLaoDong.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.NghiPhep.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.NhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.PhongBan.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.TaiKhoan.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.XemDanhSanhNhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\BLL.dll
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DAL.dll
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DTO.dll
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\BLL.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DAL.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DAL.dll.config
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DTO.pdb
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\GUI.csproj.Up2Date
