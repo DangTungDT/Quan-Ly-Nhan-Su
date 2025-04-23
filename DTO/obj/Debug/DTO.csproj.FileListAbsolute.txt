@@ -1,0 +1,18 @@
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DTO\obj\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DTO\obj\Debug\DTO.pdb

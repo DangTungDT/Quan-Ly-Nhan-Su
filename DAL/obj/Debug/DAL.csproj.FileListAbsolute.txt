@@ -1,0 +1,30 @@
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\bin\Debug\DAL.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\bin\Debug\DAL.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\bin\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\bin\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb
+C:\Users\Nguyen Thanh Tuan\source\repos\QuanLyNhanSu\DAL\bin\Debug\DAL.dll.config
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DAL.dll.config
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DAL.dll
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DAL.pdb
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.dll
+C:\Users\Nguyen Thanh Tuan\Documents\Zalo Received Files\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.pdb
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DAL.dll.config
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DAL.dll
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DAL.pdb
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DTO.dll
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\bin\Debug\DTO.pdb
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.dll
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\DAL\obj\Debug\DAL.pdb
