@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class FieldNhanVien
+    public class DTONhanVien
     {
         public string ID { get; set; }
         public string IDChucVu { get; set; }
@@ -19,15 +19,15 @@ namespace DTO
         public DateTime? NgaySinh { get; set; }
         public string Email { get; set; }
 
-        public FieldNhanVien()
+        public DTONhanVien()
         {
 
         }
-        public FieldNhanVien(string id)
+        public DTONhanVien(string id)
         {
             ID = id;
         }
-        public FieldNhanVien(string id, string iDChucVu, int? iDLuong, string iDPhongBan, string tenNhanVien, string diaChi, string que, string gioiTinh, DateTime? ngaySinh, string email)
+        public DTONhanVien(string id, string iDChucVu, int? iDLuong, string iDPhongBan, string tenNhanVien, string diaChi, string que, string gioiTinh, DateTime? ngaySinh, string email)
         {
             ID = id;
             IDChucVu = iDChucVu;

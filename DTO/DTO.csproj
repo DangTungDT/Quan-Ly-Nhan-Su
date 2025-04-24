@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FieldDanhGiaNV.cs" />
-    <Compile Include="FieldNghiPhep.cs" />
-    <Compile Include="FieldNhanVien.cs" />
-    <Compile Include="FieldPhongBan.cs" />
+    <Compile Include="DTODanhGiaNV.cs" />
+    <Compile Include="DTONghiPhep.cs" />
+    <Compile Include="DTONhanVien.cs" />
+    <Compile Include="DTOPhongBan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

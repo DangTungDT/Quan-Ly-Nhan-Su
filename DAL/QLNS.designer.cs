@@ -937,7 +937,7 @@ namespace DAL
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.FieldDanhGiaNV")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DTODanhGiaNV")]
 	public partial class DanhGiaNhanVien : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		

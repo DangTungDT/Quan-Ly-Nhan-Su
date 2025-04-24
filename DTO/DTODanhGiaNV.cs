@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class FieldDanhGiaNV
+    public class DTODanhGiaNV
     {
         private int id;
         private int diemSo;

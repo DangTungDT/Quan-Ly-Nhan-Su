@@ -14,7 +14,7 @@ namespace QuanLyNhanSu
 {
     public partial class NhanVien : Form
     {
-        public CheckData data = new CheckData();
+        public BLLCheckDataNV data = new BLLCheckDataNV();
 
         public NhanVien()
         {
@@ -88,7 +88,7 @@ namespace QuanLyNhanSu
 
             try
             {
-                FieldNhanVien nv = new FieldNhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
+                DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
                 if (nv != null)
                 {
                     if (data.CheckAddNVien(nv))
@@ -117,7 +117,7 @@ namespace QuanLyNhanSu
         {
             try
             {
-                FieldNhanVien nv = new FieldNhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
+                DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
                 if (nv != null)
                 {
                     if (data.CheckUpdateNVien(nv))
@@ -149,7 +149,7 @@ namespace QuanLyNhanSu
             {
                 try
                 {
-                    if (data.CheckDeleteNVien(new FieldNhanVien(txtID?.Text)))
+                    if (data.CheckDeleteNVien(new DTONhanVien(txtID?.Text)))
                     {
                         dtGridMainNV.DataSource = data.CheckListNVien();
                     }

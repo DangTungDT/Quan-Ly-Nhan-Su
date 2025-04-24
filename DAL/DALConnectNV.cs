@@ -12,11 +12,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DAL
 {
-    public class ConnectQLNS
+    public class DALConnectNV
     {
         public readonly QLNSDataContext qlns;
 
-        public ConnectQLNS()
+        public DALConnectNV()
         {
             qlns = new QLNSDataContext();
         }
@@ -28,7 +28,7 @@ namespace DAL
         public IEnumerable<Luong> getAllLuong() => qlns.Luongs.ToList();
 
         // Lay d/s nhan vien
-        public IQueryable<FieldNhanVien> getAllNVien() => qlns.NhanViens.Select(nv => new FieldNhanVien
+        public IQueryable<DTONhanVien> getAllNVien() => qlns.NhanViens.Select(nv => new DTONhanVien
         {
             ID = nv.id,
             IDChucVu = nv.idChucVu,
@@ -43,7 +43,7 @@ namespace DAL
         });
 
         // Xy li them nhan vien
-        public bool AddNVien(FieldNhanVien nv)
+        public bool AddNVien(DTONhanVien nv)
         {
             try
             {
@@ -73,7 +73,7 @@ namespace DAL
         }
 
         // Xy li cap nhat nhan vien
-        public bool UpdateNVien(FieldNhanVien nv)
+        public bool UpdateNVien(DTONhanVien nv)
         {
             try
             {
@@ -100,7 +100,7 @@ namespace DAL
         }
 
         // Xy li xoa nhan vien
-        public bool DeleteNVien(FieldNhanVien nv)
+        public bool DeleteNVien(DTONhanVien nv)
         {
             try
             {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,8 +12,9 @@ using System.Windows.Forms;
 
 namespace QuanLyNhanSu
 {
-    public partial class PhongBan: Form
+    public partial class PhongBan : Form
     {
+        BLLCheckDataPB data = new BLLCheckDataPB();
         public PhongBan()
         {
             InitializeComponent();
@@ -19,17 +22,7 @@ namespace QuanLyNhanSu
 
         private void PhongBan_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            dtGridMainPB.DataSource = data.CheckGetAllPBan();
         }
 
         private void PhongBan_FormClosing(object sender, FormClosingEventArgs e)
@@ -48,6 +41,86 @@ namespace QuanLyNhanSu
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (data.CheckAddPBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
+                {
+                    dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi thêm phòng ban: " + ex.Message);
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                }
+            }
+            finally { Empty(); }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (data.CheckUpdatePBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
+                {
+                    dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi cập nhật phòng ban: " + ex.Message);
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                }
+            }
+            finally { Empty(); }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa dữ liệu phòng ban này không ?", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    if (data.CheckDeletePBan(new DTOPhongBan(txtID.Text)))
+                    {
+                        dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi xóa phòng ban: " + ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    }
+                }
+                finally { Empty(); }
+            }
+        }
+
+        private void dtGridMainPB_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e != null && e.RowIndex > -1)
+            {
+                txtID.Text = dtGridMainPB.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtTenPB.Text = dtGridMainPB.Rows[e.RowIndex].Cells[1].Value.ToString();
+                rtMoTa.Text = dtGridMainPB.Rows[e.RowIndex].Cells[2].Value.ToString();
+            }
+        }
+
+        public void Empty()
+        {
+            txtID.Clear();
+            txtTenPB.Clear();
+            rtMoTa.Clear();
         }
     }
 }

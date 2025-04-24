@@ -231,7 +231,7 @@
             this.label10.Text = "ĐÁNH GIÁ NHÂN VIÊN";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FieldDanhGiaNV
+            // DTODanhGiaNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -253,7 +253,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FieldDanhGiaNV";
+            this.Name = "DTODanhGiaNV";
             this.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DanhGiaNhanVien_FormClosing);

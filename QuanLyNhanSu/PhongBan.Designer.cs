@@ -56,7 +56,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 63);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label10
             // 
@@ -91,7 +90,6 @@
             this.panel2.Padding = new System.Windows.Forms.Padding(0, 14, 14, 0);
             this.panel2.Size = new System.Drawing.Size(512, 473);
             this.panel2.TabIndex = 10;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnThoat
             // 
@@ -115,6 +113,7 @@
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -126,6 +125,7 @@
             this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -137,6 +137,7 @@
             this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTenPB
             // 
@@ -208,6 +209,7 @@
             this.dtGridMainPB.RowHeadersWidth = 51;
             this.dtGridMainPB.Size = new System.Drawing.Size(386, 473);
             this.dtGridMainPB.TabIndex = 9;
+            this.dtGridMainPB.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridMainPB_CellContentClick);
             // 
             // PhongBan
             // 

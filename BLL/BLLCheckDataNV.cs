@@ -13,17 +13,17 @@ using System.Xml;
 
 namespace BLL
 {
-    public class CheckData
+    public class BLLCheckDataNV
     {
-        public readonly ConnectQLNS qlns;
+        public readonly DALConnectNV qlns;
 
-        public CheckData()
+        public BLLCheckDataNV()
         {
-            qlns = new ConnectQLNS();
+            qlns = new DALConnectNV();
         }
 
         // Kiem tra du lieu tu d/s NV
-        public List<FieldNhanVien> CheckListNVien()
+        public List<DTONhanVien> CheckListNVien()
         {
             var list = qlns.getAllNVien().ToList();
             if (list.Any() && list != null)
@@ -61,7 +61,7 @@ namespace BLL
         public IEnumerable<Luong> CheckListLuong() => qlns.getAllLuong();
 
         // Kiem tra du lieu them NV
-        public bool CheckAddNVien(FieldNhanVien nv)
+        public bool CheckAddNVien(DTONhanVien nv)
         {
             if (nv == null) return false;
             else
@@ -71,8 +71,7 @@ namespace BLL
                 {
                     try
                     {
-                        qlns.AddNVien(nv);
-                        return true;
+                        return qlns.AddNVien(nv);
                     }
                     catch (Exception ex)
                     {
@@ -83,7 +82,7 @@ namespace BLL
         }
 
         // Kiem tra du lieu cap nhat NV
-        public bool CheckUpdateNVien(FieldNhanVien nv)
+        public bool CheckUpdateNVien(DTONhanVien nv)
         {
             if (nv == null) return false;
             else
@@ -93,8 +92,7 @@ namespace BLL
                 {
                     try
                     {
-                        qlns.UpdateNVien(nv);
-                        return true;
+                        return qlns.UpdateNVien(nv);
                     }
                     catch (Exception ex)
                     {
@@ -105,7 +103,7 @@ namespace BLL
         }
 
         // Kiem tra du lieu xoa NV
-        public bool CheckDeleteNVien(FieldNhanVien nv)
+        public bool CheckDeleteNVien(DTONhanVien nv)
         {
             if (nv == null) return false;
             else
@@ -115,8 +113,7 @@ namespace BLL
                 {
                     try
                     {
-                        qlns.DeleteNVien(nv);
-                        return true;
+                        return qlns.DeleteNVien(nv);
                     }
                     catch (Exception ex)
                     {
