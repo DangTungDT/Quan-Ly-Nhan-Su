@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using DAL;
 using DTO;
 
@@ -14,6 +15,35 @@ namespace BLL
     {
         public readonly DALConnectPB qlns;
         public BLLCheckDataPB() => qlns = new DALConnectPB();
+
+        // Kiem tra du lieu trong trong Form
+        public bool CheckEmptyXontrol(Control.ControlCollection controls, ErrorProvider error)
+        {
+            bool ktra = true;
+            error.Clear();
+
+            foreach (var item in controls)
+            {
+                if (item is TextBox text && string.IsNullOrWhiteSpace(text.Text))
+                {
+                    if (text.Name == "txtTim")
+                    {
+                        continue;
+                    }
+
+                    error.SetError(text, $"Empty {text.Name.Substring(3)} !!!");
+                    ktra = false;
+                }
+
+                if (item is ComboBox combo && string.IsNullOrWhiteSpace(combo.Text))
+                {
+                    error.SetError(combo, $"Empty {combo.Name.Substring(2)} !!!");
+                    ktra = false;
+                }
+            }
+
+            return ktra;
+        }
 
         public List<DTOPhongBan> CheckGetAllPBan()
         {
@@ -87,5 +117,6 @@ namespace BLL
                 throw new Exception("Lỗi xóa phòng ban: " + ex.Message, ex);
             }
         }
+
     }
 }

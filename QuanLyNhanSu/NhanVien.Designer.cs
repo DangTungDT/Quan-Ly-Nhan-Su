@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dtNgayTao = new System.Windows.Forms.DateTimePicker();
             this.cbLuong = new System.Windows.Forms.ComboBox();
             this.cbChucVu = new System.Windows.Forms.ComboBox();
@@ -58,8 +59,10 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMainNV)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtNgayTao
@@ -359,6 +362,10 @@
             this.txtEmail.Size = new System.Drawing.Size(166, 21);
             this.txtEmail.TabIndex = 17;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,6 +407,7 @@
             this.Load += new System.EventHandler(this.NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMainNV)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,5 +445,6 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

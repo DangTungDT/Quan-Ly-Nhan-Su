@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,30 +8,42 @@ namespace DTO
 {
     public class DTODanhGiaNV
     {
-        private int id;
-        private int diemSo;
-        private int idNguoiDanhGia;
-        private int idNhanVien;
-        private string nhanXet;
-        private DateTime ngayTao;
 
-
-        public int Id { get => id; set => id = value; }
-        public int DiemSo
+        public DTODanhGiaNV()
         {
-            get => diemSo;
-            set
-            {
-                if (value > -1 && value < 11)
-                {
-                    diemSo = value;
-                }
-                else throw new Exception("Loi diem so");
-            }
+
         }
-        public int IdNhanVien { get => idNhanVien; }
-        public int IdNguoiDanhGia { get => idNguoiDanhGia; }
-        public string NhanXet { get => nhanXet; set => nhanXet = value; }
-        public DateTime NgayTao { get => ngayTao; set => ngayTao = DateTime.Now;  }
+
+        public DTODanhGiaNV(int id)
+        {
+            ID = id;
+        }
+
+        public DTODanhGiaNV(int diemSo, string iDNguoiDanhGia, string iDNhanVien, string nhanXet, DateTime ngayTao)
+        {
+
+            DiemSo = diemSo;
+            IDNguoiDanhGia = iDNguoiDanhGia;
+            IDNhanVien = iDNhanVien;
+            NhanXet = nhanXet;
+            NgayTao = ngayTao;
+        }
+
+        public DTODanhGiaNV(int iD, int diemSo, string iDNguoiDanhGia, string iDNhanVien, string nhanXet, DateTime ngayTao)
+        {
+            ID = iD;
+            DiemSo = diemSo;
+            IDNguoiDanhGia = iDNguoiDanhGia;
+            IDNhanVien = iDNhanVien;
+            NhanXet = nhanXet;
+            NgayTao = ngayTao;
+        }
+
+        public int ID { get; set; }
+        public int? DiemSo { get; set; }
+        public string IDNguoiDanhGia { get; set; }
+        public string IDNhanVien { get; set; }
+        public string NhanXet { get; set; }
+        public DateTime? NgayTao { get; set; }
     }
 }

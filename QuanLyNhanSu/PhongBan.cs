@@ -27,60 +27,65 @@ namespace QuanLyNhanSu
 
         private void PhongBan_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult question = MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (question == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                e.Cancel = false;
-            }
-            else
-            {
-                e.Cancel = true;
+                Application.Exit();
             }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+            }
         }
 
+        // Du lieu nhap them phong ban
         private void btnThem_Click(object sender, EventArgs e)
         {
-            try
+            if (data.CheckEmptyXontrol(this.Controls, errorProvider1))
             {
-                if (data.CheckAddPBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
+                try
                 {
-                    dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                    if (data.CheckAddPBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
+                    {
+                        dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi thêm phòng ban: " + ex.Message);
-                if (ex.InnerException != null)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    MessageBox.Show("Lỗi thêm phòng ban: " + ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    }
                 }
+                finally { Empty(); }
             }
-            finally { Empty(); }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            try
+            if (data.CheckEmptyXontrol(this.Controls, errorProvider1))
             {
-                if (data.CheckUpdatePBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
+                try
                 {
-                    dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                    if (data.CheckUpdatePBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
+                    {
+                        dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi cập nhật phòng ban: " + ex.Message);
-                if (ex.InnerException != null)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    MessageBox.Show("Lỗi cập nhật phòng ban: " + ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    }
                 }
+                finally { Empty(); }
             }
-            finally { Empty(); }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

@@ -6,17 +6,46 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTONghiPhep
+    public class DTONghiPhep
     {
-        public int id, idNhanVien;
-        public string lyDoNghi, loaiNghi;
-        public DateTime ngayBD, ngayKT;
+        public DTONghiPhep()
+        {
 
-        public int Id { get => id; set => id = value; }
-        public int IdNhanVien { get => idNhanVien; }
-        public string LyDoNghi { get => lyDoNghi; set => lyDoNghi = value; }
-        public string LoaiNghi { get => loaiNghi; set => loaiNghi = value; }
-        public DateTime NgayBD { get => ngayBD; set => ngayBD = DateTime.Now; }
-        public DateTime NgayKT { get => ngayKT; set => ngayKT = value; }
+        }
+
+        public DTONghiPhep(int id)
+        {
+            ID = id;
+        }
+
+        public DTONghiPhep(string nhanVien, string lyDoNghi, string loaiNghiPhep, DateTime? ngayBD, DateTime? ngayKT)
+        {
+            NhanVien = nhanVien;
+            LyDoNghi = lyDoNghi;
+            LoaiNghiPhep = loaiNghiPhep;
+            NgayBD = ngayBD;
+            NgayKT = ngayKT;
+        }
+
+        public DTONghiPhep(int id, string nhanVien, string lyDoNghi, string loaiNghiPhep, DateTime? ngayBD, DateTime? ngayKT)
+        {
+            ID = id;
+            NhanVien = nhanVien;
+            LyDoNghi = lyDoNghi;
+            LoaiNghiPhep = loaiNghiPhep;
+            NgayBD = ngayBD;
+            NgayKT = ngayKT;
+        }
+
+        public int ID { get; set; }
+
+        public string NhanVien { get; set; }
+        public string LyDoNghi { get; set; }
+        public string LoaiNghiPhep { get; set; }
+
+        public DateTime? NgayBD { get; set; }
+        public DateTime? NgayKT { get; set; }
+
+
     }
 }

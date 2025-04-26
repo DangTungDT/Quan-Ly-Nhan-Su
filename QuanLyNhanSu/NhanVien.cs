@@ -52,13 +52,15 @@ namespace QuanLyNhanSu
 
         private void NhanVien_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            DialogResult question = MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (question == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Hide();
             }
@@ -86,60 +88,60 @@ namespace QuanLyNhanSu
         private void btnThem_Click(object sender, EventArgs e)
         {
 
-            try
+            if (data.CheckEmptyXontrol(this.Controls, errorProvider1))
             {
-                DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
-                if (nv != null)
+                try
                 {
-                    if (data.CheckAddNVien(nv))
+                    DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
+                    if (nv != null)
                     {
-                        MessageBox.Show("Thêm nhân viên thành công");
-                        dtGridMainNV.DataSource = data.CheckListNVien();
+                        if (data.CheckAddNVien(nv))
+                        {
+                            MessageBox.Show("Thêm nhân viên thành công");
+                            dtGridMainNV.DataSource = data.CheckListNVien();
+                        }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi thêm nhân viên: " + ex.Message);
-                if (ex.InnerException != null)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    MessageBox.Show("Lỗi thêm nhân viên: " + ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    }
                 }
-            }
-            finally
-            {
-                Empty();
+                finally { Empty(); }
             }
         }
+
 
         // Du lieu cap nhat nhan vien
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            try
+            if (data.CheckEmptyXontrol(this.Controls, errorProvider1))
             {
-                DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
-                if (nv != null)
+                try
                 {
-                    if (data.CheckUpdateNVien(nv))
+                    DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
+                    if (nv != null)
                     {
-                        MessageBox.Show("Cập nhật nhân viên thành công");
-                        dtGridMainNV.DataSource = data.CheckListNVien();
+                        if (data.CheckUpdateNVien(nv))
+                        {
+                            MessageBox.Show("Cập nhật nhân viên thành công");
+                            dtGridMainNV.DataSource = data.CheckListNVien();
+                        }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi cập nhật nhân viên: " + ex.Message);
-                if (ex.InnerException != null)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    MessageBox.Show("Lỗi cập nhật nhân viên: " + ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    }
                 }
+                finally { Empty(); }
             }
-            finally
-            {
-                Empty();
-            }
-
         }
 
         // Xoa nhan vien bang id
@@ -163,10 +165,7 @@ namespace QuanLyNhanSu
                         MessageBox.Show("Lỗi: " + ex.InnerException.Message);
                     }
                 }
-                finally
-                {
-                    Empty();
-                }
+                finally { Empty(); }
             }
         }
 

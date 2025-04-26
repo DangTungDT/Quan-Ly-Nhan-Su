@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,8 +12,9 @@ using System.Windows.Forms;
 
 namespace QuanLyNhanSu
 {
-    public partial class DanhGiaNhanVien: Form
+    public partial class DanhGiaNhanVien : Form
     {
+        public BLLCheckDataDGNV dg = new BLLCheckDataDGNV();
         public DanhGiaNhanVien()
         {
             InitializeComponent();
@@ -19,25 +22,175 @@ namespace QuanLyNhanSu
 
         private void DanhGiaNhanVien_Load(object sender, EventArgs e)
         {
+            dtGridMainDG.DataSource = dg.CheckGetAllDGNV();
 
+            cbNguoiDanhGia.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains("TP")).ToList();
+            cbNguoiDanhGia.DisplayMember = "id";
+            cbNguoiDanhGia.ValueMember = "id";
         }
 
         private void DanhGiaNhanVien_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult question = MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (question == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                e.Cancel = false;
-            }
-            else
-            {
-                e.Cancel = true;
+                Application.Exit();
             }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (dg.CheckEmptyXontrol(this.Controls, errorProvider1))
+            {
+                try
+                {
+                    if (dg.CheckAddDGNVien(new DTODanhGiaNV(int.Parse(txtDiemSo.Text), cbNguoiDanhGia.Text, cbNhanVien.Text, rtNhanXet.Text, dtNgayTao.Value)))
+                    {
+                        dtGridMainDG.DataSource = dg.CheckGetAllDGNV();
+                        MessageBox.Show("Thêm dữ liệu thành công !!!");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Lỗi: " + ex.Message, "Thông báo");
+                    return;
+                }
+                finally { Empty(); }
+            }
+        }
+
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtID.Text))
+            {
+                MessageBox.Show("Vui lòng nhập id đánh giá để sửa thông tin !!!");
+                return;
+            }
+            if (dg.CheckEmptyXontrol(this.Controls, errorProvider1))
+            {
+                try
+                {
+                    if (dg.CheckUpdateDGNVien(new DTODanhGiaNV(int.Parse(txtID.Text), int.Parse(txtDiemSo.Text), cbNguoiDanhGia.Text, cbNhanVien.Text, rtNhanXet.Text, dtNgayTao.Value)))
+                    {
+                        dtGridMainDG.DataSource = dg.CheckGetAllDGNV();
+                        MessageBox.Show("Cập nhật dữ liệu thành công !!!");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Lỗi: " + ex.Message, "Thông báo");
+                    return;
+                }
+                finally { Empty(); }
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muôn xóa dữ liệu đánh giá này không ??", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    if (string.IsNullOrEmpty(txtID.Text))
+                    {
+                        MessageBox.Show("Vui lòng nhập id đánh giá để xóa thông tin !!!");
+                        return;
+                    }
+
+                    if (dg.CheckDeleteDGNVien(new DTODanhGiaNV(int.Parse(txtID.Text))))
+                    {
+                        dtGridMainDG.DataSource = dg.CheckGetAllDGNV();
+                        MessageBox.Show("Xóa dữ liệu thành công !!!");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Lỗi: " + ex.Message, "Thông báo");
+                    return;
+                }
+                finally { Empty(); }
+            }
+        }
+
+        private void dtGridMainDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1 && e != null)
+            {
+                txtID.Text = dtGridMainDG.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtDiemSo.Text = dtGridMainDG.Rows[e.RowIndex].Cells[1].Value.ToString();
+                rtNhanXet.Text = dtGridMainDG.Rows[e.RowIndex].Cells[4].Value.ToString();
+                dtNgayTao.Value = DateTime.Parse(dtGridMainDG.Rows[e.RowIndex].Cells[5].Value.ToString());
+
+                var idDanhGia = dtGridMainDG.Rows[e.RowIndex].Cells[2].Value.ToString();
+                //MessageBox.Show(idDanhGia);
+
+                cbNguoiDanhGia.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains("TP")).ToList();
+                cbNguoiDanhGia.DisplayMember = "id";
+                cbNguoiDanhGia.ValueMember = "id";
+
+                if (!string.IsNullOrEmpty(idDanhGia))
+                {
+                    cbNguoiDanhGia.SelectedValue = idDanhGia;
+                }
+                else cbNguoiDanhGia.SelectedIndex = -1;
+
+                if (cbNguoiDanhGia.SelectedValue != null)
+                {
+                    var major = cbNguoiDanhGia.SelectedValue.ToString().Substring(2, 4);
+                    cbNhanVien.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains(major)).ToList();
+
+                    cbNhanVien.DisplayMember = "id";
+                    cbNhanVien.ValueMember = "id";
+
+                    var idNhanVien = dtGridMainDG.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    //MessageBox.Show(idNhanVien);
+                    if (!string.IsNullOrEmpty(idNhanVien))
+                    {
+                        cbNhanVien.SelectedValue = idNhanVien;
+                    }
+                    else cbNhanVien.SelectedIndex = -1;
+                }
+                else
+                {
+                    cbNhanVien.DataSource = null;
+                    cbNhanVien.SelectedIndex = -1;
+                }
+
+
+            }
+        }
+
+        // Khi chon truong phong de danh gia se hien thi danh sach nhan vien duoc quan li boi truong phong
+        private void cbNguoiDanhGia_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (cbNguoiDanhGia.SelectedValue != null)
+            {
+                var major = cbNguoiDanhGia.SelectedValue.ToString().Substring(2, 4);
+                cbNhanVien.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains(major)).ToList();
+
+                cbNhanVien.DisplayMember = "id";
+                cbNhanVien.ValueMember = "id";
+            }
+        }
+
+        private void Empty()
+        {
+            txtID.Clear();
+            txtDiemSo.Clear();
+            rtNhanXet.Clear();
+            cbNhanVien.SelectedIndex = -1;
+            cbNguoiDanhGia.SelectedIndex = -1;
         }
     }
 }

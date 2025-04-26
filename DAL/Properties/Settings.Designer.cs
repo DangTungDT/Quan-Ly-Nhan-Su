@@ -33,5 +33,16 @@ namespace DAL.Properties {
                 return ((string)(this["PersonnelManagementConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-PNFFHRG1;Initial Catalog=PersonnelManagement;Integrated Securi" +
+            "ty=True;Encrypt=True;TrustServerCertificate=True")]
+        public string PersonnelManagementConnectionString1 {
+            get {
+                return ((string)(this["PersonnelManagementConnectionString1"]));
+            }
+        }
     }
 }

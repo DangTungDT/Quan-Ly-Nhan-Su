@@ -3,48 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\quanlynhansu\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|solutionrelative:quanlynhansu\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\quanlynhansu\\danhgianhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|solutionrelative:quanlynhansu\\danhgianhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\quanlynhansu\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|solutionrelative:quanlynhansu\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\dto\\dtodanhgianv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|solutionrelative:dto\\dtodanhgianv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\dto\\dtophongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|solutionrelative:dto\\dtophongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\dal\\dalconnectdgnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|solutionrelative:dal\\dalconnectdgnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\bll\\bllcheckdatapb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|solutionrelative:bll\\bllcheckdatapb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\bll\\bllcheckdatanv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|solutionrelative:bll\\bllcheckdatanv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\dal\\dalconnectpb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|solutionrelative:dal\\dalconnectpb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\dal\\dalconnectnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|solutionrelative:dal\\dalconnectnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\quanlynhansu\\danhgianhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|solutionrelative:quanlynhansu\\danhgianhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\quanlynhansu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|solutionrelative:quanlynhansu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\quanlynhansu\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|solutionrelative:quanlynhansu\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\quanlynhansu\\nghiphep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF04291B-3672-4A30-AE6B-A11921868AE0}|QuanLyNhanSu\\GUI.csproj|solutionrelative:quanlynhansu\\nghiphep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\dto\\dtonghiphep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|solutionrelative:dto\\dtonghiphep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\bll\\bllcheckdatadgnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|solutionrelative:bll\\bllcheckdatadgnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|c:\\users\\nguyen thanh tuan\\downloads\\quanlynhansu_ver.3.4\\dto\\dtonhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69D107A-B3D7-48D8-B6BE-CAF6FD20CB32}|DTO\\DTO.csproj|solutionrelative:dto\\dtonhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\bll\\bllcheckdatanp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|solutionrelative:bll\\bllcheckdatanp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\dal\\dalconnectnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7C3520F-A8F6-4160-B6CB-5128D27CB62A}|DAL\\DAL.csproj|solutionrelative:dal\\dalconnectnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\bll\\bllcheckdatapb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{997F6C0A-9C9E-44A1-A961-8023726143F1}|BLL\\BLL.csproj|solutionrelative:bll\\bllcheckdatapb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,58 +50,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 318,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\Program.cs",
               "RelativeDocumentMoniker": "QuanLyNhanSu\\Program.cs",
               "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\Program.cs",
               "RelativeToolTip": "QuanLyNhanSu\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T00:29:51.237Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PhongBan.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\PhongBan.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanSu\\PhongBan.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\PhongBan.cs",
-              "RelativeToolTip": "QuanLyNhanSu\\PhongBan.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:59:21.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PhongBan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\PhongBan.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanSu\\PhongBan.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\PhongBan.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanSu\\PhongBan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T01:06:30.504Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DTOPhongBan.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTOPhongBan.cs",
-              "RelativeDocumentMoniker": "DTO\\DTOPhongBan.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTOPhongBan.cs",
-              "RelativeToolTip": "DTO\\DTOPhongBan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:31:14.908Z",
               "EditorCaption": ""
             },
             {
@@ -146,47 +104,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\frmMain.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanSu\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\frmMain.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanSu\\frmMain.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "DanhGiaNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\DanhGiaNhanVien.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\DanhGiaNhanVien.cs",
+              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\DanhGiaNhanVien.cs [Design]*",
+              "RelativeToolTip": "QuanLyNhanSu\\DanhGiaNhanVien.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:30:43.833Z",
+              "WhenOpened": "2025-04-26T15:09:15.567Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DTONhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTONhanVien.cs",
-              "RelativeDocumentMoniker": "DTO\\DTONhanVien.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTONhanVien.cs",
-              "RelativeToolTip": "DTO\\DTONhanVien.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DTODanhGiaNV.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTODanhGiaNV.cs",
+              "RelativeDocumentMoniker": "DTO\\DTODanhGiaNV.cs",
+              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTODanhGiaNV.cs",
+              "RelativeToolTip": "DTO\\DTODanhGiaNV.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T11:05:48.043Z",
+              "WhenOpened": "2025-04-26T13:21:35.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DTONghiPhep.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTONghiPhep.cs",
-              "RelativeDocumentMoniker": "DTO\\DTONghiPhep.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DTO\\DTONghiPhep.cs",
-              "RelativeToolTip": "DTO\\DTONghiPhep.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DanhGiaNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\DanhGiaNhanVien.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\DanhGiaNhanVien.cs",
+              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\DanhGiaNhanVien.cs*",
+              "RelativeToolTip": "QuanLyNhanSu\\DanhGiaNhanVien.cs*",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwHIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T11:15:52.697Z",
+              "WhenOpened": "2025-04-26T13:04:47.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DALConnectDGNV.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DAL\\DALConnectDGNV.cs",
+              "RelativeDocumentMoniker": "DAL\\DALConnectDGNV.cs",
+              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DAL\\DALConnectDGNV.cs",
+              "RelativeToolTip": "DAL\\DALConnectDGNV.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAMwEkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:05:57.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BLLCheckDataDGNV.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataDGNV.cs",
+              "RelativeDocumentMoniker": "BLL\\BLLCheckDataDGNV.cs",
+              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataDGNV.cs",
+              "RelativeToolTip": "BLL\\BLLCheckDataDGNV.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwHgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:05:38.178Z",
               "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 240,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -202,54 +186,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "BLLCheckDataPB.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataPB.cs",
               "RelativeDocumentMoniker": "BLL\\BLLCheckDataPB.cs",
               "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataPB.cs",
               "RelativeToolTip": "BLL\\BLLCheckDataPB.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwDYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:43:22.878Z",
+              "WhenOpened": "2025-04-26T12:41:54.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BLLCheckDataNV.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataNV.cs",
-              "RelativeDocumentMoniker": "BLL\\BLLCheckDataNV.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataNV.cs",
-              "RelativeToolTip": "BLL\\BLLCheckDataNV.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEYAAAARAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "BLLCheckDataNP.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataNP.cs",
+              "RelativeDocumentMoniker": "BLL\\BLLCheckDataNP.cs",
+              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\BLL\\BLLCheckDataNP.cs",
+              "RelativeToolTip": "BLL\\BLLCheckDataNP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T01:17:44.129Z",
+              "WhenOpened": "2025-04-26T09:29:01.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DALConnectPB.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DAL\\DALConnectPB.cs",
-              "RelativeDocumentMoniker": "DAL\\DALConnectPB.cs",
-              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DAL\\DALConnectPB.cs",
-              "RelativeToolTip": "DAL\\DALConnectPB.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:38:41.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DALConnectNV.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DAL\\DALConnectNV.cs",
               "RelativeDocumentMoniker": "DAL\\DALConnectNV.cs",
               "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\DAL\\DALConnectNV.cs",
               "RelativeToolTip": "DAL\\DALConnectNV.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwD8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwCoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T00:56:14.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NghiPhep.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\NghiPhep.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\NghiPhep.cs",
+              "ToolTip": "C:\\Users\\Nguyen Thanh Tuan\\Downloads\\QuanLyNhanSu_ver.3.4\\QuanLyNhanSu\\NghiPhep.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\NghiPhep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:45:55.567Z",
               "EditorCaption": ""
             }
           ]
