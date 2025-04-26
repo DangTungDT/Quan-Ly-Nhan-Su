@@ -9,15 +9,14 @@ namespace DTO
     public  class DTO_Luong
     {
         int id;
-        float soTienLuong;
+        decimal soTienLuong;
 
-        public DTO_Luong(int id, float soTienLuong)
+        public DTO_Luong(decimal soTienLuong)
         {
-            this.Id = id;
             this.SoTienLuong = soTienLuong;
         }
 
         public int Id { get => id; set => id = value; }
-        public float SoTienLuong { get => soTienLuong; set => soTienLuong = value; }
+        public decimal SoTienLuong { get => soTienLuong; set => soTienLuong = value; }
     }
 }
