@@ -51,7 +51,7 @@ namespace QuanLyNhanSu
         {
             if (txtId.Text != "" && txtLyDoKyLuat.Text != "" && txtNoiDungKyLuat.Text != "")
             {
-                DTO_KyLuat dto = new DTO_KyLuat(txtNoiDungKyLuat.Text, txtLyDoKyLuat.Text);
+                DTO_KyLuat dto = new DTO_KyLuat(int.Parse(txtId.Text),txtNoiDungKyLuat.Text, txtLyDoKyLuat.Text);
                 if (bll.EditKyLuat(dto))
                 {
                     MessageBox.Show("Sửa thành công !", "Thông báo");

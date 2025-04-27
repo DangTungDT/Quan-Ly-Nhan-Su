@@ -45,6 +45,7 @@
     <Compile Include="BLL_KhenThuong.cs" />
     <Compile Include="BLL_KhenThuong_NhanVien.cs" />
     <Compile Include="BLL_KyLuat.cs" />
+    <Compile Include="BLL_KyLuat_NhanVien.cs" />
     <Compile Include="BLL_Luong.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

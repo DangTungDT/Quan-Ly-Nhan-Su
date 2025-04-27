@@ -89,3 +89,4 @@ D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DTO.pdb
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\GUI.csproj.Up2Date
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmKhenThuong_NhanVien.resources
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmKyLuat.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmKyLuat_NhanVien.resources
