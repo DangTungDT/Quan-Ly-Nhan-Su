@@ -34,3 +34,8 @@ C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\obj\Debug\BLL.cspr
 C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\obj\Debug\BLL.csproj.Up2Date
 C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\obj\Debug\BLL.dll
 C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\obj\Debug\BLL.pdb
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\bin\Debug\BLL.dll.config
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\BLL\bin\Debug\EntityFramework.SqlServer.xml

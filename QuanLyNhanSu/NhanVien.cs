@@ -28,15 +28,15 @@ namespace QuanLyNhanSu
                 dtGridMainNV.DataSource = data.CheckListNVien();
 
                 cbChucVu.DataSource = data.CheckListCVu();
-                cbChucVu.DisplayMember = "id";
+                cbChucVu.DisplayMember = "TenChucVu";
                 cbChucVu.ValueMember = "id";
 
                 cbPhongBan.DataSource = data.CheckListPBan();
-                cbPhongBan.DisplayMember = "id";
+                cbPhongBan.DisplayMember = "TenPhongBan";
                 cbPhongBan.ValueMember = "id";
 
                 cbLuong.DataSource = data.CheckListLuong();
-                cbLuong.DisplayMember = "id";
+                cbLuong.DisplayMember = "SoTienLuong";
                 cbLuong.ValueMember = "id";
             }
             catch (Exception ex)
@@ -47,14 +47,13 @@ namespace QuanLyNhanSu
                     MessageBox.Show("Lỗi: " + ex.InnerException.Message);
                 }
             }
-
         }
 
         private void NhanVien_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Hide();
             }
         }
 
@@ -71,9 +70,9 @@ namespace QuanLyNhanSu
             if (e.RowIndex > -1 && e != null)
             {
                 txtID.Text = dtGridMainNV.Rows[e.RowIndex].Cells[0].Value.ToString();
-                cbChucVu.Text = dtGridMainNV.Rows[e.RowIndex].Cells[1].Value.ToString();
-                cbLuong.Text = dtGridMainNV.Rows[e.RowIndex].Cells[2].Value.ToString();
-                cbPhongBan.Text = dtGridMainNV.Rows[e.RowIndex].Cells[3].Value.ToString();
+                cbChucVu.SelectedValue = dtGridMainNV.Rows[e.RowIndex].Cells[1].Value.ToString();
+                cbLuong.SelectedValue = int.Parse(dtGridMainNV.Rows[e.RowIndex].Cells[2].Value.ToString());
+                cbPhongBan.SelectedValue = dtGridMainNV.Rows[e.RowIndex].Cells[3].Value.ToString();
                 txtTenNV.Text = dtGridMainNV.Rows[e.RowIndex].Cells[4].Value.ToString();
                 txtDiaChi.Text = dtGridMainNV.Rows[e.RowIndex].Cells[5].Value.ToString();
                 txtQue.Text = dtGridMainNV.Rows[e.RowIndex].Cells[6].Value.ToString();
@@ -87,18 +86,20 @@ namespace QuanLyNhanSu
         // Du lieu nhap them nhan vien
         private void btnThem_Click(object sender, EventArgs e)
         {
-
-            if (data.CheckEmptyXontrol(this.Controls, errorProvider1))
+            if (data.CheckEmptyControl(this.Controls, errorProvider1))
             {
                 try
                 {
-                    DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
-                    if (nv != null)
+                    var chucVu = cbChucVu.SelectedValue?.ToString();
+                    int.TryParse(cbLuong.SelectedValue?.ToString(), out int luong);
+                    var phongBan = cbPhongBan.SelectedValue?.ToString();
+
+                    if (chucVu != null && luong != 0 && phongBan != null)
                     {
-                        if (data.CheckAddNVien(nv))
+                        if (data.CheckAddNVien(new DTONhanVien(txtID?.Text, chucVu, luong, phongBan, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text)))
                         {
-                            MessageBox.Show("Thêm nhân viên thành công");
                             dtGridMainNV.DataSource = data.CheckListNVien();
+                            MessageBox.Show("Thêm nhân viên thành công");
                         }
                     }
                 }
@@ -114,23 +115,25 @@ namespace QuanLyNhanSu
             }
         }
 
-
         // Du lieu cap nhat nhan vien
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if (data.CheckEmptyXontrol(this.Controls, errorProvider1))
+            if (data.CheckEmptyControl(this.Controls, errorProvider1))
             {
                 try
                 {
-                    DTONhanVien nv = new DTONhanVien(txtID?.Text, cbChucVu?.Text, int.Parse(cbLuong?.Text), cbPhongBan?.Text, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text);
-                    if (nv != null)
+                    var chucVu = cbChucVu.SelectedValue?.ToString();
+                    int.TryParse(cbLuong.SelectedValue?.ToString(), out int luong);
+                    var phongBan = cbPhongBan.SelectedValue?.ToString();
+                    if (chucVu != null && luong != 0 && phongBan != null)
                     {
-                        if (data.CheckUpdateNVien(nv))
+                        if (data.CheckAddNVien(new DTONhanVien(txtID?.Text, chucVu, luong, phongBan, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text)))
                         {
-                            MessageBox.Show("Cập nhật nhân viên thành công");
                             dtGridMainNV.DataSource = data.CheckListNVien();
+                            MessageBox.Show("Cập nhật nhân viên thành công");
                         }
                     }
+
                 }
                 catch (Exception ex)
                 {
@@ -154,6 +157,7 @@ namespace QuanLyNhanSu
                     if (data.CheckDeleteNVien(new DTONhanVien(txtID?.Text)))
                     {
                         dtGridMainNV.DataSource = data.CheckListNVien();
+                        MessageBox.Show("Xóa dữ liệu nhân viên thành công");
                     }
 
                 }
@@ -182,5 +186,39 @@ namespace QuanLyNhanSu
             cbPhongBan.SelectedIndex = -1;
             cbGioiTinh.SelectedIndex = -1;
         }
+
+
+        // Tim kiem nhan vien (go dung nhan vien thi du lieu tu day datagrid => ko can button)
+        private void txtTim_TextChanged(object sender, EventArgs e)
+        {
+            FindFGeneral();
+        }
+
+        public void FindFGeneral()
+        {
+            try
+            {
+                var listNV = data.CheckListNVien().Where(p => p.ID.Contains(txtTim.Text.ToUpper())).ToList();
+
+                if (listNV != null && listNV.Count > 0)
+                {
+                    dtGridMainNV.DataSource = listNV;
+                }
+                else
+                {
+                    dtGridMainNV.DataSource = data.CheckListNVien();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Lỗi tìm nhân viên: " + ex.Message);
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                }
+            }
+        }
+
     }
 }

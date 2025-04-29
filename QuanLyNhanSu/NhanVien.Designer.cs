@@ -52,7 +52,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTim = new System.Windows.Forms.TextBox();
-            this.btnTim = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -223,11 +222,13 @@
             // 
             // dtGridMainNV
             // 
+            this.dtGridMainNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridMainNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridMainNV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtGridMainNV.Location = new System.Drawing.Point(10, 328);
+            this.dtGridMainNV.Location = new System.Drawing.Point(10, 343);
             this.dtGridMainNV.Name = "dtGridMainNV";
             this.dtGridMainNV.RowHeadersWidth = 51;
+            this.dtGridMainNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtGridMainNV.Size = new System.Drawing.Size(784, 150);
             this.dtGridMainNV.TabIndex = 18;
             this.dtGridMainNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridMainNV_CellContentClick);
@@ -279,30 +280,21 @@
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(345, 298);
+            this.label9.Location = new System.Drawing.Point(342, 290);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 19);
+            this.label9.Size = new System.Drawing.Size(100, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "Tìm nhân viên:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtTim
             // 
-            this.txtTim.Location = new System.Drawing.Point(442, 298);
+            this.txtTim.Location = new System.Drawing.Point(308, 314);
             this.txtTim.Multiline = true;
             this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(166, 22);
+            this.txtTim.Size = new System.Drawing.Size(170, 24);
             this.txtTim.TabIndex = 17;
-            // 
-            // btnTim
-            // 
-            this.btnTim.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(642, 298);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(112, 24);
-            this.btnTim.TabIndex = 19;
-            this.btnTim.Text = "Tim";
-            this.btnTim.UseVisualStyleBackColor = true;
+            this.txtTim.TextChanged += new System.EventHandler(this.txtTim_TextChanged);
             // 
             // panel1
             // 
@@ -370,9 +362,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 488);
+            this.ClientSize = new System.Drawing.Size(804, 503);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnTim);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnXoa);
@@ -401,7 +392,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NhanVien";
-            this.Padding = new System.Windows.Forms.Padding(10);
+            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.Text = "NhanVien";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NhanVien_FormClosing);
             this.Load += new System.EventHandler(this.NhanVien_Load);
@@ -438,7 +429,6 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtTim;
-        private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

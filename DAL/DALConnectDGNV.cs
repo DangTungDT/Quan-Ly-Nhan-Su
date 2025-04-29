@@ -113,5 +113,11 @@ namespace DAL
                 return false;
             }
         }
+
+        // Chuyen cbox tu name thanh id
+        public string ConvertNameToIDNVien(string text)
+        {
+            return getAllNVien().Where(p => p.TenNhanVien == text).Select(p => p.ID).FirstOrDefault();
+        }
     }
 }

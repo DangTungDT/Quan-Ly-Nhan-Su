@@ -267,6 +267,7 @@
             this.Name = "NghiPhep";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "NghiPhep";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NghiPhep_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NghiPhep_FormClosed);
             this.Load += new System.EventHandler(this.NghiPhep_Load);
             this.panel1.ResumeLayout(false);

@@ -29,7 +29,7 @@ namespace QuanLyNhanSu
         {
             if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Hide();
             }
         }
 
@@ -51,6 +51,7 @@ namespace QuanLyNhanSu
                     if (data.CheckAddPBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
                     {
                         dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                        MessageBox.Show("Thêm dữ liệu thành công !!!");
                     }
                 }
                 catch (Exception ex)
@@ -74,6 +75,7 @@ namespace QuanLyNhanSu
                     if (data.CheckUpdatePBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
                     {
                         dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                        MessageBox.Show("Sửa dữ liệu thành công !!!");
                     }
                 }
                 catch (Exception ex)
@@ -97,6 +99,7 @@ namespace QuanLyNhanSu
                     if (data.CheckDeletePBan(new DTOPhongBan(txtID.Text)))
                     {
                         dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                        MessageBox.Show("Xóa dữ liệu thành công !!!");
                     }
                 }
                 catch (Exception ex)

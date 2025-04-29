@@ -270,7 +270,7 @@
             this.Name = "DanhGiaNhanVien";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DanhGiaNhanVien_FormClosing);
+
             this.Load += new System.EventHandler(this.DanhGiaNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMainDG)).EndInit();
             this.panel1.ResumeLayout(false);

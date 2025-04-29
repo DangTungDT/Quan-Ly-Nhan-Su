@@ -26,15 +26,15 @@ namespace QuanLyNhanSu
         {
             if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Hide();
             }
         }
 
         private void NghiPhep_Load(object sender, EventArgs e)
         {
-            dtGridMainNP.DataSource = np.CheckGetAllNphep();
+            dtGridMainNP.DataSource = np.CheckGetAllNPhep();
 
-            cbLoaiNghi.DataSource = np.CheckGetAllNphep();
+            cbLoaiNghi.DataSource = np.CheckGetAllNPhep();
             cbLoaiNghi.DisplayMember = "LoaiNghiPhep";
             cbLoaiNghi.ValueMember = "id";
         }
@@ -57,7 +57,8 @@ namespace QuanLyNhanSu
                 {
                     if (np.CheckAddNghiPhep(new DTONghiPhep(txtIDNV.Text, rtLyDo.Text, cbLoaiNghi.Text, dtBatDau.Value, dtKetThuc.Value)))
                     {
-                        dtGridMainNP.DataSource = np.CheckGetAllNphep();
+                        dtGridMainNP.DataSource = np.CheckGetAllNPhep();
+                        MessageBox.Show("Thêm dữ liệu thành công !!!");
                     }
                 }
                 catch (Exception ex)
@@ -67,7 +68,6 @@ namespace QuanLyNhanSu
                     return;
                 }
                 finally { Empty(); }
-                MessageBox.Show("Thêm dữ liệu thành công !!!");
             }
         }
 
@@ -80,7 +80,8 @@ namespace QuanLyNhanSu
                 {
                     if (np.CheckUpdateNghiPhep(new DTONghiPhep(int.Parse(txtID.Text), txtIDNV.Text, rtLyDo.Text, cbLoaiNghi.Text, dtBatDau.Value, dtKetThuc.Value)))
                     {
-                        dtGridMainNP.DataSource = np.CheckGetAllNphep();
+                        dtGridMainNP.DataSource = np.CheckGetAllNPhep();
+                        MessageBox.Show("Sửa dữ liệu thành công !!!");
                     }
                 }
                 catch (Exception ex)
@@ -90,7 +91,6 @@ namespace QuanLyNhanSu
                     return;
                 }
                 finally { Empty(); }
-                MessageBox.Show("Sửa dữ liệu thành công !!!");
             }
         }
 
@@ -103,7 +103,8 @@ namespace QuanLyNhanSu
                 {
                     if (np.CheckDeleteNghiPhep(new DTONghiPhep(int.Parse(txtID.Text))))
                     {
-                        dtGridMainNP.DataSource = np.CheckGetAllNphep();
+                        dtGridMainNP.DataSource = np.CheckGetAllNPhep();
+                        MessageBox.Show("Xóa dữ liệu thành công !!!");
                     }
                 }
                 catch (Exception ex)
@@ -112,8 +113,6 @@ namespace QuanLyNhanSu
                     MessageBox.Show("Lỗi: " + ex.Message, "Thông báo");
                     return;
                 }
-
-                MessageBox.Show("Xóa dữ liệu thành công !!!");
             }
         }
 
@@ -130,12 +129,18 @@ namespace QuanLyNhanSu
             }
         }
 
+        // Lam trong truong du lieu sau khi CRUD xong
         private void Empty()
         {
             txtID.Clear();
             txtIDNV.Clear();
             rtLyDo.Clear();
             cbLoaiNghi.SelectedIndex = -1;
+        }
+
+        private void NghiPhep_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

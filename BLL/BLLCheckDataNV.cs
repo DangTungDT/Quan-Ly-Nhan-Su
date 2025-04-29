@@ -24,7 +24,7 @@ namespace BLL
         }
 
         // Kiem tra du lieu trong trong Form
-        public bool CheckEmptyXontrol(Control.ControlCollection controls, ErrorProvider error)
+        public bool CheckEmptyControl(Control.ControlCollection controls, ErrorProvider error)
         {
             bool ktra = true;
             error.Clear();
@@ -86,9 +86,9 @@ namespace BLL
             return list;
         }
 
-        public IEnumerable<ChucVu> CheckListCVu() => qlns.getAllCVu();
-        public IEnumerable<PhongBan> CheckListPBan() => qlns.getAllPBan();
-        public IEnumerable<Luong> CheckListLuong() => qlns.getAllLuong();
+        public List<ChucVu> CheckListCVu() => qlns.getAllCVu().ToList();
+        public List<PhongBan> CheckListPBan() => qlns.getAllPBan().ToList();
+        public List<Luong> CheckListLuong() => qlns.getAllLuong().ToList();
 
         // Kiem tra du lieu them NV
         public bool CheckAddNVien(DTONhanVien nv)
@@ -152,6 +152,71 @@ namespace BLL
                 }
             }
         }
+
+
+        // Kiem tra chuc vu nhan vien duoc convert
+        public string CheckConvertNameToIDChucVu(string name)
+        {
+            if (name == null) return string.Empty;
+            else
+            {
+                if (!qlns.getAllNVien().Any()) return string.Empty;
+                else
+                {
+                    try
+                    {
+                        return qlns.ConvertNameToIDChucVu(name);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Lỗi chuyển đổi dữ liệu chức vụ nhân viên: " + ex.Message, ex);
+                    }
+                }
+            }
+        }
+
+        // Kiem tra luong nhan vien duoc convert
+        public int CheckConvertNameToIDLuong(int luong)
+        {
+            if (luong < 0) return 0;
+            else
+            {
+                if (!qlns.getAllNVien().Any()) return 0;
+                else
+                {
+                    try
+                    {
+                        return qlns.ConvertNameToIDLuong(luong);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Lỗi chuyển đổi dữ liệu lương nhân viên: " + ex.Message, ex);
+                    }
+                }
+            }
+        }
+
+        // Kiem tra phong ban nhan vien duoc convert
+        public string CheckConvertNameToIDPhongBan(string name)
+        {
+            if (name == null) return string.Empty;
+            else
+            {
+                if (!qlns.getAllNVien().Any()) return string.Empty;
+                else
+                {
+                    try
+                    {
+                        return qlns.ConvertNameToIDPhongBan(name);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Lỗi chuyển đổi dữ liệu phòng ban nhân viên: " + ex.Message, ex);
+                    }
+                }
+            }
+        }
+
 
     }
 }

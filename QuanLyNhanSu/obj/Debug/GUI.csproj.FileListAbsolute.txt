@@ -86,3 +86,4 @@ C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\QuanLyNhanSu\obj\Debug
 C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\QuanLyNhanSu\obj\Debug\GUI.csproj.Up2Date
 C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+C:\Users\Nguyen Thanh Tuan\Downloads\QuanLyNhanSu_ver.3.4\QuanLyNhanSu\bin\Debug\BLL.dll.config

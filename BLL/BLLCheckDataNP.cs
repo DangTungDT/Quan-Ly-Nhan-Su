@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using System.Data.Entity;
+using DAL;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -49,8 +50,10 @@ namespace BLL
             return ktra;
         }
 
+        //public async Task<List<DTONghiPhep>> NghiList() => await qlns.GetAllNPhep().ToListAsync();
+
         // Kiem tra du lieu tu d/s NghiPhep
-        public List<DTONghiPhep> CheckGetAllNphep()
+        public List<DTONghiPhep> CheckGetAllNPhep()
         {
             try
             {
@@ -132,7 +135,5 @@ namespace BLL
                 throw new Exception("Lỗi xóa nghỉ phép: " + ex.Message);
             }
         }
-
-
     }
 }

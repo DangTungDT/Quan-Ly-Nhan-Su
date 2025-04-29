@@ -1,6 +1,7 @@
 ﻿using BLL;
 using DTO;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,17 +26,10 @@ namespace QuanLyNhanSu
             dtGridMainDG.DataSource = dg.CheckGetAllDGNV();
 
             cbNguoiDanhGia.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains("TP")).ToList();
-            cbNguoiDanhGia.DisplayMember = "id";
+            cbNguoiDanhGia.DisplayMember = "TenNhanVien";
             cbNguoiDanhGia.ValueMember = "id";
         }
 
-        private void DanhGiaNhanVien_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -45,13 +39,16 @@ namespace QuanLyNhanSu
             }
         }
 
+
+
+        // Nhap du lieu them danh gia nhan vien
         private void btnThem_Click(object sender, EventArgs e)
         {
             if (dg.CheckEmptyXontrol(this.Controls, errorProvider1))
             {
                 try
                 {
-                    if (dg.CheckAddDGNVien(new DTODanhGiaNV(int.Parse(txtDiemSo.Text), cbNguoiDanhGia.Text, cbNhanVien.Text, rtNhanXet.Text, dtNgayTao.Value)))
+                    if (dg.CheckAddDGNVien(new DTODanhGiaNV(int.Parse(txtDiemSo.Text), dg.CheckConvertNameToINVien(cbNguoiDanhGia.Text), dg.CheckConvertNameToINVien(cbNhanVien.Text), rtNhanXet.Text, dtNgayTao.Value)))
                     {
                         dtGridMainDG.DataSource = dg.CheckGetAllDGNV();
                         MessageBox.Show("Thêm dữ liệu thành công !!!");
@@ -67,7 +64,7 @@ namespace QuanLyNhanSu
             }
         }
 
-
+        // Nhap du lieu cap nhat nghi phep nhan vien
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtID.Text))
@@ -79,7 +76,7 @@ namespace QuanLyNhanSu
             {
                 try
                 {
-                    if (dg.CheckUpdateDGNVien(new DTODanhGiaNV(int.Parse(txtID.Text), int.Parse(txtDiemSo.Text), cbNguoiDanhGia.Text, cbNhanVien.Text, rtNhanXet.Text, dtNgayTao.Value)))
+                    if (dg.CheckUpdateDGNVien(new DTODanhGiaNV(int.Parse(txtID.Text), int.Parse(txtDiemSo.Text), dg.CheckConvertNameToINVien(cbNguoiDanhGia.Text), dg.CheckConvertNameToINVien(cbNhanVien.Text), rtNhanXet.Text, dtNgayTao.Value)))
                     {
                         dtGridMainDG.DataSource = dg.CheckGetAllDGNV();
                         MessageBox.Show("Cập nhật dữ liệu thành công !!!");
@@ -95,6 +92,7 @@ namespace QuanLyNhanSu
             }
         }
 
+        // Nhap du lieu xoa nghi phep nhan vien
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muôn xóa dữ liệu đánh giá này không ??", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -136,7 +134,7 @@ namespace QuanLyNhanSu
                 //MessageBox.Show(idDanhGia);
 
                 cbNguoiDanhGia.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains("TP")).ToList();
-                cbNguoiDanhGia.DisplayMember = "id";
+                cbNguoiDanhGia.DisplayMember = "TenNhanVien";
                 cbNguoiDanhGia.ValueMember = "id";
 
                 if (!string.IsNullOrEmpty(idDanhGia))
@@ -150,7 +148,7 @@ namespace QuanLyNhanSu
                     var major = cbNguoiDanhGia.SelectedValue.ToString().Substring(2, 4);
                     cbNhanVien.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains(major)).ToList();
 
-                    cbNhanVien.DisplayMember = "id";
+                    cbNhanVien.DisplayMember = "TenNhanVien";
                     cbNhanVien.ValueMember = "id";
 
                     var idNhanVien = dtGridMainDG.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -179,7 +177,7 @@ namespace QuanLyNhanSu
                 var major = cbNguoiDanhGia.SelectedValue.ToString().Substring(2, 4);
                 cbNhanVien.DataSource = dg.CheckListNVien().Where(p => p.ID.Contains(major)).ToList();
 
-                cbNhanVien.DisplayMember = "id";
+                cbNhanVien.DisplayMember = "TenNhanVien";
                 cbNhanVien.ValueMember = "id";
             }
         }
@@ -192,5 +190,7 @@ namespace QuanLyNhanSu
             cbNhanVien.SelectedIndex = -1;
             cbNguoiDanhGia.SelectedIndex = -1;
         }
+
+
     }
 }

@@ -2,6 +2,7 @@
 using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Common.CommandTrees;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,23 @@ namespace BLL
             return list;
         }
 
+        public bool CheckScoreDGNV(DTODanhGiaNV nv)
+        {
+            try
+            {
+                if (nv.DiemSo < 0 || nv.DiemSo > 10)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi kiểm tra d/s đánh giá nhân viên: " + ex.Message, ex);
+            }
+        }
+
         // Kiem tra d/s du lieu danh gia nhan vien
         public List<DTODanhGiaNV> CheckGetAllDGNV()
         {
@@ -62,11 +80,12 @@ namespace BLL
                 {
                     foreach (var item in list)
                     {
-                        if (item.DiemSo < 0 || item.DiemSo > 10)
+                        if (item.DiemSo > -1 || item.DiemSo < 11)
                         {
-                            item.DiemSo = 0;
+                            return list;
                         }
                     }
+                    throw new Exception("Điểm số không hợp lệ!!!");
                 }
                 catch (Exception ex)
                 {
@@ -77,8 +96,6 @@ namespace BLL
             {
                 throw new Exception("Danh sách đánh giá nhân viên rỗng hoặc null");
             }
-
-            return list;
         }
 
         // Kiem tra du lieu trong trong Form
@@ -116,7 +133,7 @@ namespace BLL
         {
             try
             {
-                if (qlns.getAllDGNVien().Any() && np != null)
+                if (CheckGetAllDGNV() != null && np != null && CheckScoreDGNV(np))
                 {
                     return qlns.AddDGNVien(np);
                 }
@@ -137,7 +154,7 @@ namespace BLL
             try
             {
                 var ktra = qlns.getAllDGNVien().FirstOrDefault(p => p.ID == np.ID);
-                if (ktra != null && np != null)
+                if (ktra != null && np != null && CheckScoreDGNV(np))
                 {
                     return qlns.UpdateDGNVien(np);
                 }
@@ -171,5 +188,28 @@ namespace BLL
                 throw new Exception("Lỗi xóa đánh giá nhân viên: " + ex.Message);
             }
         }
+
+        // Kiem tra ten nhan vien duoc convert
+        public string CheckConvertNameToINVien(string name)
+        {
+            if (name == null) return string.Empty;
+            else
+            {
+                if (!qlns.getAllNVien().Any()) return string.Empty;
+                else
+                {
+                    try
+                    {
+                        return qlns.ConvertNameToIDNVien(name);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Lỗi chuyển đổi dữ liệu nhân viên: " + ex.Message, ex);
+                    }
+                }
+            }
+        }
+
+
     }
 }

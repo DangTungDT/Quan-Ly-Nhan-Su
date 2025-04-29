@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,11 +22,11 @@ namespace DAL
             qlns = new QLNSDataContext();
         }
 
-        public IEnumerable<ChucVu> getAllCVu() => qlns.ChucVus.ToList();
+        public IQueryable<ChucVu> getAllCVu() => qlns.ChucVus;
 
-        public IEnumerable<PhongBan> getAllPBan() => qlns.PhongBans.ToList();
+        public IQueryable<PhongBan> getAllPBan() => qlns.PhongBans;
 
-        public IEnumerable<Luong> getAllLuong() => qlns.Luongs.ToList();
+        public IQueryable<Luong> getAllLuong() => qlns.Luongs;
 
         // Lay d/s nhan vien
         public IQueryable<DTONhanVien> getAllNVien() => qlns.NhanViens.Select(nv => new DTONhanVien
@@ -99,7 +100,7 @@ namespace DAL
             return true;
         }
 
-        // Xy li xoa nhan vien
+        // Xy li xoa nhan vien (neu nguoi bi xoa la truong phong thi tai khoan van bi xoa)
         public bool DeleteNVien(DTONhanVien nv)
         {
             try
@@ -126,5 +127,25 @@ namespace DAL
                 return false;
             }
         }
+
+        // Chuyen cbox Chuc vu tu name thanh id CVu
+        public string ConvertNameToIDChucVu(string text)
+        {
+            return getAllCVu().Where(p => p.TenChucVu == text).Select(p => p.id).FirstOrDefault();
+        }
+
+        // Chuyen cbox Chuc vu tu name thanh id Luong
+        public int ConvertNameToIDLuong(int luong)
+        {
+            return getAllLuong().Where(p => p.SoTienLuong == luong).Select(p => p.id).FirstOrDefault();
+        }
+
+        // Chuyen cbox Chuc vu tu name thanh id PBan
+        public string ConvertNameToIDPhongBan(string text)
+        {
+            return getAllPBan().Where(p => p.TenPhongBan == text).Select(p => p.id).FirstOrDefault();
+        }
+
+
     }
 }
