@@ -40,6 +40,7 @@
             // 
             this.txtTenNhanVien.Location = new System.Drawing.Point(174, 85);
             this.txtTenNhanVien.Name = "txtTenNhanVien";
+            this.txtTenNhanVien.ReadOnly = true;
             this.txtTenNhanVien.Size = new System.Drawing.Size(215, 22);
             this.txtTenNhanVien.TabIndex = 0;
             // 
@@ -106,6 +107,7 @@
             this.Controls.Add(this.txtTenNhanVien);
             this.Name = "frmChamCongNhanVien";
             this.Text = "frmChamCongNhanVien";
+            this.Load += new System.EventHandler(this.frmChamCongNhanVien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
