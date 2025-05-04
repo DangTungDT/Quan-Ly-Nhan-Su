@@ -43,7 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectSQL.cs" />
+    <Compile Include="DALChucVu.cs" />
     <Compile Include="DAL_KhenThuong.cs" />
+    <Compile Include="DAL_KhenThuong_NhanVien.cs" />
+    <Compile Include="DAL_KyLuat.cs" />
+    <Compile Include="DAL_KyLuatNhanVien.cs" />
     <Compile Include="DAL_Luong.cs" />
     <Compile Include="PersonnelManagement.designer.cs">
       <AutoGen>True</AutoGen>

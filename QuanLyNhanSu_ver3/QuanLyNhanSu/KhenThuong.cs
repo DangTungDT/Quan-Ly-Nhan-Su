@@ -22,7 +22,9 @@ namespace QuanLyNhanSu
 
         private void frmKhenThuong_Load(object sender, EventArgs e)
         {
+            //Load danh sách khen thưởng
             dgvKhenThuong.DataSource = bll.LoadKhenThuong();
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -40,25 +42,38 @@ namespace QuanLyNhanSu
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DTO_KhenThuong dto = new DTO_KhenThuong(dtpNgayKhenThuong.Value, int.Parse(txtSoTien.Text), txtLyDo.Text);
-            if (bll.XoaKhenThuong(dto))
+            DialogResult kq = MessageBox.Show("Bạn có muốn xóa ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(kq == DialogResult.Yes)
             {
-                MessageBox.Show("Xóa thành công !", "Thông báo");
-            }
-            else
-            {
-                MessageBox.Show("Xóa thất bại !", "Thông báo");
+                DTO_KhenThuong dto = new DTO_KhenThuong(dtpNgayKhenThuong.Value, int.Parse(txtSoTien.Text), txtLyDo.Text);
+                if (bll.XoaKhenThuong(dto))
+                {
+                    MessageBox.Show("Xóa thành công !", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại !", "Thông báo");
+                }
             }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-
+            DTO_KhenThuong dto = new DTO_KhenThuong(dtpNgayKhenThuong.Value, int.Parse(txtSoTien.Text), txtLyDo.Text);
+            dto.Id = int.Parse(txtIdKhenThuong.Text);
+            if (bll.EditKhenThuong(dto))
+            {
+                MessageBox.Show("Sửa thành công !", "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Sửa thất bại !", "Thông báo");
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
         }
 
         private void KhenThuong_FormClosing(object sender, FormClosingEventArgs e)
@@ -79,10 +94,12 @@ namespace QuanLyNhanSu
             if (dgvKhenThuong.Rows[dgvKhenThuong.CurrentCell.RowIndex].Cells[1].Value != null && dgvKhenThuong.CurrentCell != null && dgvKhenThuong.CurrentCell.RowIndex >= 0 && dgvKhenThuong.Rows[dgvKhenThuong.CurrentCell.RowIndex].Cells[0] != null)
             {
                 int dong = dgvKhenThuong.CurrentCell.RowIndex;
+                txtIdKhenThuong.Text = dgvKhenThuong.Rows[dong].Cells[0].Value.ToString();
                 dtpNgayKhenThuong.Text = dgvKhenThuong.Rows[dong].Cells[1].Value.ToString();
                 txtSoTien.Text = dgvKhenThuong.Rows[dong].Cells[2].Value.ToString();
                 txtLyDo.Text = dgvKhenThuong.Rows[dong].Cells[3].Value.ToString();
             }
         }
+
     }
 }

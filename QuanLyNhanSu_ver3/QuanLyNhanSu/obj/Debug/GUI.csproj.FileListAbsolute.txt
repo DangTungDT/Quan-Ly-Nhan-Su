@@ -64,7 +64,6 @@ D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMai
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMainNhanVien.resources
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMainTruongPhong.resources
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.KhenThuong.resources
-D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.KyLuat.resources
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Luong.resources
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.HopDongLaoDong.resources
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.NghiPhep.resources
@@ -88,3 +87,6 @@ D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DAL.pdb
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DAL.dll.config
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\bin\Debug\DTO.pdb
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\GUI.csproj.Up2Date
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmKhenThuong_NhanVien.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmKyLuat.resources
+D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmKyLuat_NhanVien.resources

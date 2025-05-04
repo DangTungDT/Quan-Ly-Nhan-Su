@@ -21,7 +21,7 @@ create table ChucVu
 go
 
 --Table 2
---Create Table PhongBan
+--Create Table PhongBan	
 create table PhongBan
 (
 	id varchar(10) not null,
@@ -166,7 +166,7 @@ create table DuAn
 (
 	id varchar(10) not null,
 	TenDuAn nvarchar(100) not null,
-	MoTa text,
+	MoTa ntext,
 	NgayBatDau date,
 	NgayKetThuc date,
 	TrangThai nvarchar(20),
@@ -195,7 +195,7 @@ Create table DanhGiaNhanVien
 (
 	id int identity(1,1) not null,
 	DiemSo int,
-	NhanXet text,
+	NhanXet ntext,
 	ngayTao date,
 	idNhanVien varchar(10),
 	idNguoiDanhGia varchar(10),
@@ -416,11 +416,11 @@ insert into NghiPhep(NgayBatDau, NgayKetThuc, LyDoNghi, LoaiNghiPhep, idNhanVien
 go
 
 insert into KhenThuong(ngayKhenThuong, SoTienThuong, LyDo) values
-('25/12/2024',10000000, 'Thưởng tết'),
-('25/12/2024',20000000, 'Thưởng đạt KPI năm'),
-('25/12/2024',50000000, 'Thưởng vượt KPI năm'),
-('25/12/2024',100000000, 'Thưởng nhân viên xuất sắc nhất năm'),
-('25/12/2024',200000000, 'Thưởng nhân viên kiếm lợi nhuật nhiều nhất ')
+('25/12/2024',10000000, N'Thưởng tết'),
+('25/12/2024',20000000, N'Thưởng đạt KPI năm'),
+('25/12/2024',50000000, N'Thưởng vượt KPI năm'),
+('25/12/2024',100000000, N'Thưởng nhân viên xuất sắc nhất năm'),
+('25/12/2024',200000000, N'Thưởng nhân viên kiếm lợi nhuật nhiều nhất ')
 go
 
 insert into KhenThuong_NhanVien(idKhenThuong, idNhanVien) values

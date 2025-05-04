@@ -14,9 +14,19 @@ namespace DAL
         //Method
         public IQueryable LoadKhenThuong()
         {
-            IQueryable listKT = from kt in db.KhenThuongs select kt;
-            return listKT;
+            return from kt in db.KhenThuongs select kt;
         }
+
+        public IQueryable LoadNhanVien(string idPhongBan)
+        {
+            return from nhanVien in db.NhanViens where nhanVien.idPhongBan == idPhongBan select nhanVien;
+        }
+
+        public IQueryable LoadPhongBan()
+        {
+            return from phongBan in db.PhongBans select phongBan;
+        }
+
 
         public bool XoaKhenThuong(DTO_KhenThuong dto)
         {
@@ -57,6 +67,24 @@ namespace DAL
             {
                 db.SubmitChanges();
                 LoadKhenThuong();
+            }
+        }
+
+        public bool EditKhenThuong(DTO_KhenThuong dto)
+        {
+            try
+            {
+                KhenThuong oldKhenThuong = db.KhenThuongs.Single(x => x.id == dto.Id);
+                oldKhenThuong.ngayKhenThuong = dto.NgayKhenThuong;
+                oldKhenThuong.SoTienThuong = dto.SoTienThuong;
+                oldKhenThuong.LyDo = dto.LyDo;
+                db.SubmitChanges();
+                return true;
+
+            }
+            catch
+            {
+                return false;
             }
         }
     }
