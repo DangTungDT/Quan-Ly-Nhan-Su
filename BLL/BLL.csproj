@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLLCheckDataDGNV.cs" />
+    <Compile Include="BLLCheckDataTK.cs" />
     <Compile Include="BLLCheckDataNP.cs" />
     <Compile Include="BLLCheckDataNV.cs" />
     <Compile Include="BLLCheckDataPB.cs" />

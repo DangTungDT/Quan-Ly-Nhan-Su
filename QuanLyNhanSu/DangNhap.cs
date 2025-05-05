@@ -16,7 +16,7 @@ namespace QuanLyNhanSu
 {
     public partial class DangNhap : Form
     {
-        public BLLCheckDataNV nv = new BLLCheckDataNV();
+        public BLLCheckDataTK tk = new BLLCheckDataTK();
 
         public DangNhap()
         {
@@ -42,32 +42,24 @@ namespace QuanLyNhanSu
         {
             try
             {
-                errorProvider1.Clear();
+                if (tk.CheckEmptyControl(this.Controls, errorProvider1))
+                {
+                    var IDNhanVien = !string.IsNullOrWhiteSpace(txtTK.Text) ? txtTK.Text.ToUpper().Trim() : string.Empty;
+                    var account = tk.CheckGetAllTKhoan().Where(p => p.IDNhanVien == IDNhanVien).FirstOrDefault();
+                    var taiKhoan = account.IDNhanVien;
+                    var matKhau = account.MatKhau;
 
-                if (txtTK.Text == string.Empty)
-                {
-                    errorProvider1.SetError(txtTK, "Tài khoản của bạn đang trống");
-                }
-                else if (txtMK.Text == string.Empty)
-                {
-                    errorProvider1.SetError(txtMK, "Mật khẩu của bạn đang trống");
-                }
-                else
-                {
-                    var taiKhoan = !string.IsNullOrWhiteSpace(txtTK.Text) ? txtTK.Text.ToUpper().Trim() : string.Empty;
-                    var position = nv.CheckListNVien().Where(p => taiKhoan.Contains(p.ID)).Select(p => p.ID).FirstOrDefault();
-
-                    if (position == txtMK.Text.Split('_')[0])
+                    if (ckXacThuc.Checked)
                     {
-                        if (rdXacThuc.Checked)
+                        if (taiKhoan.Equals(txtTK.Text.Trim().ToUpper()) && matKhau.Equals(txtMK.Text.Trim()))
                         {
                             MessageBox.Show("Đăng nhập thành công");
                             new frmMain().Show();
                             this.Hide();
                         }
-                        else MessageBox.Show("Bạn chưa xác thực tài khoản");
+                        else MessageBox.Show("Đăng nhập thất bại");
                     }
-                    else MessageBox.Show("Đăng nhập thất bại");
+                    else MessageBox.Show("Bạn chưa xác thực tài khoản");
                 }
             }
             catch (Exception ex)
@@ -79,9 +71,6 @@ namespace QuanLyNhanSu
                     MessageBox.Show("Lỗi chi tiết: " + ex.InnerException.Message);
                 }
             }
-
-            //new frmMain().Show();
-            //this.Hide();
         }
 
         private void DangNhap_Load(object sender, EventArgs e)
@@ -94,12 +83,12 @@ namespace QuanLyNhanSu
         {
             try
             {
-                var taiKhoan = !string.IsNullOrWhiteSpace(txtTK.Text) ? txtTK.Text.ToUpper().Trim() : string.Empty;
-                var position = nv.CheckListNVien().Where(p => p.ID == taiKhoan).Select(p => p.IDChucVu).FirstOrDefault();
+                var IDNhanVien = !string.IsNullOrWhiteSpace(txtTK.Text) ? txtTK.Text.ToUpper().Trim() : string.Empty;
+                var Account = tk.CheckGetAllTKhoan().Where(p => p.IDNhanVien == IDNhanVien).Select(p => p.IDNhanVien).FirstOrDefault();
 
-                if (position != null)
+                if (Account != null)
                 {
-                    txtTK.Text = taiKhoan + "_" + position;
+                    txtTK.Text = Account.Trim();
                 }
             }
             catch (Exception ex)
@@ -109,19 +98,16 @@ namespace QuanLyNhanSu
         }
 
         // Gan mat khau nhanh cho txtMK cua txtTK
-        private void ckMK_CheckedChanged(object sender, EventArgs e)
-        {
-            if (ckMK.Checked)
-            {
-                txtMK.Text = txtTK.Text;
-            }
-            else txtMK.Text = string.Empty;
-        }
+
 
         private void rdXacThuc_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
+        private void ckXacThuc_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

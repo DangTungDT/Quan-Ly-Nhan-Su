@@ -36,8 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtTK = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.ckMK = new System.Windows.Forms.CheckBox();
-            this.rdXacThuc = new System.Windows.Forms.RadioButton();
+            this.ckXacThuc = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +56,7 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(213, 196);
+            this.btnLogin.Location = new System.Drawing.Point(213, 190);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(121, 39);
             this.btnLogin.TabIndex = 3;
@@ -106,35 +105,23 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // ckMK
+            // ckXacThuc
             // 
-            this.ckMK.AutoSize = true;
-            this.ckMK.Location = new System.Drawing.Point(332, 158);
-            this.ckMK.Name = "ckMK";
-            this.ckMK.Size = new System.Drawing.Size(79, 17);
-            this.ckMK.TabIndex = 26;
-            this.ckMK.Text = "Dán nhanh";
-            this.ckMK.UseVisualStyleBackColor = true;
-            this.ckMK.CheckedChanged += new System.EventHandler(this.ckMK_CheckedChanged);
-            // 
-            // rdXacThuc
-            // 
-            this.rdXacThuc.AutoSize = true;
-            this.rdXacThuc.Location = new System.Drawing.Point(158, 158);
-            this.rdXacThuc.Name = "rdXacThuc";
-            this.rdXacThuc.Size = new System.Drawing.Size(118, 17);
-            this.rdXacThuc.TabIndex = 27;
-            this.rdXacThuc.Text = "Xác nhận tài khoản";
-            this.rdXacThuc.UseVisualStyleBackColor = true;
-            this.rdXacThuc.CheckedChanged += new System.EventHandler(this.rdXacThuc_CheckedChanged);
+            this.ckXacThuc.AutoSize = true;
+            this.ckXacThuc.Location = new System.Drawing.Point(158, 158);
+            this.ckXacThuc.Name = "ckXacThuc";
+            this.ckXacThuc.Size = new System.Drawing.Size(119, 17);
+            this.ckXacThuc.TabIndex = 24;
+            this.ckXacThuc.Text = "Xác thực tài khoản ";
+            this.ckXacThuc.UseVisualStyleBackColor = true;
+            this.ckXacThuc.CheckedChanged += new System.EventHandler(this.ckXacThuc_CheckedChanged);
             // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 273);
-            this.Controls.Add(this.rdXacThuc);
-            this.Controls.Add(this.ckMK);
+            this.Controls.Add(this.ckXacThuc);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtMK);
@@ -163,7 +150,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTK;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.CheckBox ckMK;
-        private System.Windows.Forms.RadioButton rdXacThuc;
+        private System.Windows.Forms.CheckBox ckXacThuc;
     }
 }
