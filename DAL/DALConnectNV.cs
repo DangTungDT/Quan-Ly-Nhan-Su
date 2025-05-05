@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 using DTO;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DAL
 {
@@ -145,7 +145,6 @@ namespace DAL
         {
             return getAllPBan().Where(p => p.TenPhongBan == text).Select(p => p.id).FirstOrDefault();
         }
-
 
     }
 }

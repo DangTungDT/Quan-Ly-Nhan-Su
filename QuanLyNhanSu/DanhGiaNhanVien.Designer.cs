@@ -118,6 +118,7 @@
             this.dtGridMainDG.Location = new System.Drawing.Point(10, 276);
             this.dtGridMainDG.Name = "dtGridMainDG";
             this.dtGridMainDG.RowHeadersWidth = 51;
+            this.dtGridMainDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtGridMainDG.Size = new System.Drawing.Size(728, 150);
             this.dtGridMainDG.TabIndex = 3;
             this.dtGridMainDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridMainDG_CellContentClick);
@@ -270,7 +271,6 @@
             this.Name = "DanhGiaNhanVien";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-
             this.Load += new System.EventHandler(this.DanhGiaNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMainDG)).EndInit();
             this.panel1.ResumeLayout(false);

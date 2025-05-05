@@ -204,6 +204,7 @@
             // 
             // dtGridMainPB
             // 
+            this.dtGridMainPB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridMainPB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridMainPB.Dock = System.Windows.Forms.DockStyle.Right;
             this.dtGridMainPB.Location = new System.Drawing.Point(526, 77);
