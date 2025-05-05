@@ -35,28 +35,28 @@
       <Association Name="ChucVu_NhanVien" Member="NhanViens" ThisKey="id" OtherKey="idChucVu" Type="NhanVien" />
     </Type>
   </Table>
-  <Table Name="dbo.DuAn" Member="DuAns">
-    <Type Name="DuAn">
-      <Column Name="id" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenDuAn" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="MoTa" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="NgayBatDau" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="NgayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="TrangThai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="NgayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="DuAn_DuAn_NhanVien" Member="DuAn_NhanViens" ThisKey="id" OtherKey="idDuAn" Type="DuAn_NhanVien" />
-    </Type>
-  </Table>
   <Table Name="dbo.DanhGiaNhanVien" Member="DanhGiaNhanViens">
     <Type Name="DanhGiaNhanVien">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="DiemSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NhanXet" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NhanXet" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="ngayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="idNhanVien" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="idNguoiDanhGia" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Association Name="NhanVien_DanhGiaNhanVien" Member="NhanVien" ThisKey="idNhanVien" OtherKey="id" Type="NhanVien" IsForeignKey="true" />
       <Association Name="NhanVien_DanhGiaNhanVien1" Member="NhanVien1" ThisKey="idNguoiDanhGia" OtherKey="id" Type="NhanVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DuAn" Member="DuAns">
+    <Type Name="DuAn">
+      <Column Name="id" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDuAn" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MoTa" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NgayBatDau" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TrangThai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="DuAn_DuAn_NhanVien" Member="DuAn_NhanViens" ThisKey="id" OtherKey="idDuAn" Type="DuAn_NhanVien" />
     </Type>
   </Table>
   <Table Name="dbo.DuAn_NhanVien" Member="DuAn_NhanViens">

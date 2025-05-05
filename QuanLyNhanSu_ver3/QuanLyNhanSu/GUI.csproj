@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +57,18 @@
     </Compile>
     <Compile Include="ChamCong.Designer.cs">
       <DependentUpon>ChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInDanhSachPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInDanhSachPhongBan.Designer.cs">
+      <DependentUpon>frmInDanhSachPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDanhSachNV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDanhSachNV.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -93,6 +111,12 @@
     </Compile>
     <Compile Include="frmChiTietLuong.Designer.cs">
       <DependentUpon>frmChiTietLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInDanhSachNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInDanhSachNhanVien.Designer.cs">
+      <DependentUpon>frmInDanhSachNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKhenThuong_NhanVien.cs">
       <SubType>Form</SubType>
@@ -168,6 +192,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptDanhSachPhongBan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDanhSachPhongBan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +212,13 @@
     </Compile>
     <EmbeddedResource Include="ChamCong.resx">
       <DependentUpon>ChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInDanhSachPhongBan.resx">
+      <DependentUpon>frmInDanhSachPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDanhSachNV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDanhSachNV.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
@@ -203,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietLuong.resx">
       <DependentUpon>frmChiTietLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInDanhSachNhanVien.resx">
+      <DependentUpon>frmInDanhSachNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhenThuong_NhanVien.resx">
       <DependentUpon>frmKhenThuong_NhanVien.cs</DependentUpon>
@@ -249,6 +289,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rptDanhSachPhongBan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDanhSachPhongBan.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
@@ -281,6 +325,9 @@
       <Project>{d69d107a-b3d7-48d8-b6be-caf6fd20cb32}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

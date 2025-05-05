@@ -16,5 +16,10 @@ namespace QuanLyNhanSu
         {
             InitializeComponent();
         }
+
+        private void frmChamCongNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

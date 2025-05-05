@@ -16,5 +16,19 @@ namespace QuanLyNhanSu
         {
             InitializeComponent();
         }
+
+        private void danhSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInDanhSachNhanVien f = new frmInDanhSachNhanVien();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void danhSáchPhòngBanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInDanhSachPhongBan f = new frmInDanhSachPhongBan();
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }
