@@ -12,6 +12,14 @@ namespace QuanLyNhanSu
 {
     public partial class frmMainTruongPhong : Form
     {
+
+        //Biến toàn cục
+        string IDNhanVien;
+        public frmMainTruongPhong(string id)
+        {
+            InitializeComponent();
+            IDNhanVien = id;
+        }
         public frmMainTruongPhong()
         {
             InitializeComponent();

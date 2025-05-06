@@ -293,8 +293,9 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMainGD";
-            this.Text = "Quản Lý Nhân Viên (1.0)";
+            this.Text = "Quản Lý Nhân Viên (1.0) (GiamDoc)";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMainGD_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -198,6 +198,12 @@
       <DependentUpon>rptDanhSachPhongBan.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptThongTinNhanVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptThongTinNhanVien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +299,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDanhSachPhongBan.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptThongTinNhanVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptThongTinNhanVien.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,10 +326,6 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{997f6c0a-9c9e-44a1-a961-8023726143f1}</Project>
       <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{a7c3520f-a8f6-4160-b6cb-5128d27cb62a}</Project>
-      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{d69d107a-b3d7-48d8-b6be-caf6fd20cb32}</Project>

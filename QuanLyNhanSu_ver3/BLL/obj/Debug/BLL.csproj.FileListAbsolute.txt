@@ -34,3 +34,15 @@ D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\BLL\bin\Debug\DAL.pdb
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\BLL\bin\Debug\DAL.dll.config
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\BLL\bin\Debug\DTO.pdb
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\bin\Debug\BLL.dll
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\bin\Debug\BLL.pdb
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\bin\Debug\DAL.dll
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\bin\Debug\DTO.dll
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\bin\Debug\DAL.pdb
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\bin\Debug\DAL.dll.config
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\bin\Debug\DTO.pdb
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\obj\Debug\BLL.dll
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\BLL\obj\Debug\BLL.pdb

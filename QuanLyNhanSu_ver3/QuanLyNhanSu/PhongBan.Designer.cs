@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,9 +43,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.rtMoTa = new System.Windows.Forms.RichTextBox();
             this.dtGridMainPB = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMainPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -52,7 +55,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(14, 14);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 63);
             this.panel1.TabIndex = 1;
@@ -86,7 +89,7 @@
             this.panel2.Controls.Add(this.rtMoTa);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(14, 77);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(0, 14, 14, 0);
             this.panel2.Size = new System.Drawing.Size(512, 473);
@@ -97,18 +100,19 @@
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(261, 396);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(5);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(163, 56);
             this.btnThoat.TabIndex = 10;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Location = new System.Drawing.Point(67, 396);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(163, 56);
             this.btnSua.TabIndex = 10;
@@ -119,28 +123,30 @@
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Location = new System.Drawing.Point(261, 329);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(5);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(163, 56);
             this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Location = new System.Drawing.Point(67, 329);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(5);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(163, 56);
             this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTenPB
             // 
             this.txtTenPB.Location = new System.Drawing.Point(189, 82);
-            this.txtTenPB.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTenPB.Margin = new System.Windows.Forms.Padding(5);
             this.txtTenPB.Multiline = true;
             this.txtTenPB.Name = "txtTenPB";
             this.txtTenPB.Size = new System.Drawing.Size(283, 36);
@@ -149,7 +155,7 @@
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(189, 19);
-            this.txtID.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtID.Margin = new System.Windows.Forms.Padding(5);
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(283, 39);
@@ -191,7 +197,7 @@
             // rtMoTa
             // 
             this.rtMoTa.Location = new System.Drawing.Point(19, 162);
-            this.rtMoTa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rtMoTa.Margin = new System.Windows.Forms.Padding(5);
             this.rtMoTa.Name = "rtMoTa";
             this.rtMoTa.Size = new System.Drawing.Size(453, 134);
             this.rtMoTa.TabIndex = 7;
@@ -202,11 +208,16 @@
             this.dtGridMainPB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridMainPB.Dock = System.Windows.Forms.DockStyle.Right;
             this.dtGridMainPB.Location = new System.Drawing.Point(526, 77);
-            this.dtGridMainPB.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtGridMainPB.Margin = new System.Windows.Forms.Padding(5);
             this.dtGridMainPB.Name = "dtGridMainPB";
             this.dtGridMainPB.RowHeadersWidth = 51;
             this.dtGridMainPB.Size = new System.Drawing.Size(386, 473);
             this.dtGridMainPB.TabIndex = 9;
+            this.dtGridMainPB.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridMainPB_CellContentClick);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // PhongBan
             // 
@@ -217,16 +228,18 @@
             this.Controls.Add(this.dtGridMainPB);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "PhongBan";
-            this.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.Padding = new System.Windows.Forms.Padding(14);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PhongBan";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PhongBan_FormClosing);
             this.Load += new System.EventHandler(this.PhongBan_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMainPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,5 +260,6 @@
         private System.Windows.Forms.RichTextBox rtMoTa;
         private System.Windows.Forms.DataGridView dtGridMainPB;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

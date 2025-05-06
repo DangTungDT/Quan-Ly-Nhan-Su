@@ -16,3 +16,9 @@ D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.csproj.AssemblyReference
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.dll
 D:\HocKi4\.Net\DoAn\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.pdb
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\DTO\bin\Debug\DTO.dll
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\DTO\bin\Debug\DTO.pdb
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.dll
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\DTO\obj\Debug\DTO.pdb

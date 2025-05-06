@@ -12,9 +12,23 @@ namespace QuanLyNhanSu
 {
     public partial class frmMainNhanVien : Form
     {
+
+        //Biến toàn cục
+        string IDNhanVien;
+
+        public frmMainNhanVien(string id)
+        {
+            InitializeComponent();
+            IDNhanVien = id;
+        }
         public frmMainNhanVien()
         {
             InitializeComponent();
+        }
+
+        private void frmMainNhanVien_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
