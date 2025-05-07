@@ -160,7 +160,7 @@
             // 
             this.AddNhanVienKyLuat.Location = new System.Drawing.Point(479, 167);
             this.AddNhanVienKyLuat.Name = "AddNhanVienKyLuat";
-            this.AddNhanVienKyLuat.Size = new System.Drawing.Size(182, 42);
+            this.AddNhanVienKyLuat.Size = new System.Drawing.Size(274, 42);
             this.AddNhanVienKyLuat.TabIndex = 7;
             this.AddNhanVienKyLuat.Text = "Thêm nhân viên kỷ luật";
             this.AddNhanVienKyLuat.UseVisualStyleBackColor = true;
@@ -170,7 +170,7 @@
             // 
             this.btnXoaNhanVienKyLuat.Location = new System.Drawing.Point(479, 239);
             this.btnXoaNhanVienKyLuat.Name = "btnXoaNhanVienKyLuat";
-            this.btnXoaNhanVienKyLuat.Size = new System.Drawing.Size(182, 42);
+            this.btnXoaNhanVienKyLuat.Size = new System.Drawing.Size(274, 42);
             this.btnXoaNhanVienKyLuat.TabIndex = 7;
             this.btnXoaNhanVienKyLuat.Text = "Xóa nhân viên kỷ luật";
             this.btnXoaNhanVienKyLuat.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@
             // 
             this.btnClose.Location = new System.Drawing.Point(479, 302);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(182, 42);
+            this.btnClose.Size = new System.Drawing.Size(274, 42);
             this.btnClose.TabIndex = 7;
             this.btnClose.Text = "Thoát";
             this.btnClose.UseVisualStyleBackColor = true;

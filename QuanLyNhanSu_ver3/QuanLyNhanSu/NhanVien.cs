@@ -135,7 +135,7 @@ namespace QuanLyNhanSu
                     var phongBan = cbPhongBan.SelectedValue?.ToString();
                     if (chucVu != null && luong != 0 && phongBan != null)
                     {
-                        if (data.CheckAddNVien(new DTONhanVien(txtID?.Text, chucVu, luong, phongBan, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text)))
+                        if (data.CheckUpdateNVien(new DTONhanVien(txtID?.Text, chucVu, luong, phongBan, txtTenNV.Text, txtDiaChi.Text, txtQue.Text, cbGioiTinh?.Text, dtNgayTao.Value, txtEmail.Text)))
                         {
                             dtGridMainNV.DataSource = data.CheckListNVien();
                             MessageBox.Show("Cập nhật nhân viên thành công");

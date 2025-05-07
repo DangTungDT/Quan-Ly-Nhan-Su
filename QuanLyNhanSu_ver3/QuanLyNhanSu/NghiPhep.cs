@@ -154,5 +154,18 @@ namespace QuanLyNhanSu
                 this.Hide();
             }
         }
+
+        private void dtGridMainNP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e != null && e.RowIndex > -1)
+            {
+                txtID.Text = dtGridMainNP.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtIDNV.Text = dtGridMainNP.Rows[e.RowIndex].Cells[1].Value.ToString();
+                rtLyDo.Text = dtGridMainNP.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cbLoaiNghi.Text = dtGridMainNP.Rows[e.RowIndex].Cells[3].Value.ToString();
+                dtBatDau.Value = DateTime.Parse(dtGridMainNP.Rows[e.RowIndex].Cells[4].Value.ToString());
+                dtKetThuc.Value = DateTime.Parse(dtGridMainNP.Rows[e.RowIndex].Cells[5].Value.ToString());
+            }
+        }
     }
 }

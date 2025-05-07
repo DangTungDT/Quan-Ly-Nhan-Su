@@ -41,10 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLChamCong.cs" />
+    <Compile Include="BLLChamCongNhanVien.cs" />
     <Compile Include="BLLCheckDataNP.cs" />
     <Compile Include="BLLCheckDataNV.cs" />
     <Compile Include="BLLCheckDataPB.cs" />
     <Compile Include="BLLCheckDataTK.cs" />
+    <Compile Include="BLLDuAn.cs" />
+    <Compile Include="BLLDuAnNhanVien.cs" />
+    <Compile Include="BLLHopDongLaoDong.cs" />
+    <Compile Include="BLLTaiKhoan.cs" />
+    <Compile Include="BLLXemNhanVien.cs" />
     <Compile Include="BLL_ChucVu.cs" />
     <Compile Include="BLL_KhenThuong.cs" />
     <Compile Include="BLL_KhenThuong_NhanVien.cs" />

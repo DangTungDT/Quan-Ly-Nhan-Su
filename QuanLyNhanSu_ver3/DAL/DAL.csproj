@@ -43,12 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectSQL.cs" />
+    <Compile Include="DALChamCong.cs" />
+    <Compile Include="DALChamCongNhanVien.cs" />
     <Compile Include="DALChucVu.cs" />
     <Compile Include="DALConnectDGNV.cs" />
     <Compile Include="DALconnectNP.cs" />
     <Compile Include="DALConnectNV.cs" />
     <Compile Include="DALConnectPB.cs" />
     <Compile Include="DALConnectTK.cs" />
+    <Compile Include="DALDuAn.cs" />
+    <Compile Include="DALDuAnNhanVien.cs" />
+    <Compile Include="DALHopDongLaoDong.cs" />
+    <Compile Include="DALTaiKhoan.cs" />
+    <Compile Include="DALXemNhanVien.cs" />
     <Compile Include="DAL_KhenThuong.cs" />
     <Compile Include="DAL_KhenThuong_NhanVien.cs" />
     <Compile Include="DAL_KyLuat.cs" />

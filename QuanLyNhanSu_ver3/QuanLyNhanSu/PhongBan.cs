@@ -135,5 +135,30 @@ namespace QuanLyNhanSu
             txtTenPB.Clear();
             rtMoTa.Clear();
         }
+
+        // Du lieu cap nhat them phong ban
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (CheckEmptyXontrol())
+            {
+                try
+                {
+                    if (data.CheckUpdatePBan(new DTOPhongBan(txtID.Text, txtTenPB.Text, rtMoTa.Text)))
+                    {
+                        dtGridMainPB.DataSource = data.CheckGetAllPBan();
+                        MessageBox.Show("Sửa dữ liệu thành công !!!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi cập nhật phòng ban: " + ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.InnerException.Message);
+                    }
+                }
+                finally { Empty(); }
+            }
+        }
     }
 }

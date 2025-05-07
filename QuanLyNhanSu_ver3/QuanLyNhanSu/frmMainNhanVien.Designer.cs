@@ -51,7 +51,7 @@
             this.tsmiChamCong2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,6 +73,7 @@
             this.tsmiChamCong.Name = "tsmiChamCong";
             this.tsmiChamCong.Size = new System.Drawing.Size(255, 26);
             this.tsmiChamCong.Text = "Chấm công";
+            this.tsmiChamCong.Click += new System.EventHandler(this.tsmiChamCong_Click);
             // 
             // tsmiNghiPhep
             // 
@@ -114,14 +115,16 @@
             // tsmiThoat
             // 
             this.tsmiThoat.Name = "tsmiThoat";
-            this.tsmiThoat.Size = new System.Drawing.Size(130, 26);
+            this.tsmiThoat.Size = new System.Drawing.Size(224, 26);
             this.tsmiThoat.Text = "Thoát";
+            this.tsmiThoat.Click += new System.EventHandler(this.tsmiThoat_Click);
             // 
             // tsmiChamCong2
             // 
             this.tsmiChamCong2.Name = "tsmiChamCong2";
             this.tsmiChamCong2.Size = new System.Drawing.Size(98, 24);
             this.tsmiChamCong2.Text = "Chấm công";
+            this.tsmiChamCong2.Click += new System.EventHandler(this.tsmiChamCong2_Click);
             // 
             // frmMainNhanVien
             // 
@@ -133,6 +136,7 @@
             this.Name = "frmMainNhanVien";
             this.Text = "Quản Lý Nhân Viên (1.0) (NhanVien)";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMainNhanVien_FormClosing);
             this.Load += new System.EventHandler(this.frmMainNhanVien_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

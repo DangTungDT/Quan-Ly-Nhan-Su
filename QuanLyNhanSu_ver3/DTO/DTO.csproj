@@ -43,7 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOChamCong.cs" />
+    <Compile Include="DTOChamCongNhanVien.cs" />
     <Compile Include="DTODanhGiaNV.cs" />
+    <Compile Include="DTODuAn.cs" />
+    <Compile Include="DTODuAnNhanVien.cs" />
+    <Compile Include="DTOHopDongLaoDong.cs" />
+    <Compile Include="DTONhanVienChamCong.cs" />
     <Compile Include="DTOTaiKhoan.cs" />
     <Compile Include="DTO_ChucVu.cs" />
     <Compile Include="DTO_KhenThuong.cs" />

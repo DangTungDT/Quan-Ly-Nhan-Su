@@ -80,14 +80,18 @@
             // 
             // dtGridMainNP
             // 
+            this.dtGridMainNP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridMainNP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridMainNP.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dtGridMainNP.Location = new System.Drawing.Point(13, 313);
             this.dtGridMainNP.Margin = new System.Windows.Forms.Padding(4);
+            this.dtGridMainNP.MultiSelect = false;
             this.dtGridMainNP.Name = "dtGridMainNP";
             this.dtGridMainNP.RowHeadersWidth = 51;
+            this.dtGridMainNP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtGridMainNP.Size = new System.Drawing.Size(1041, 185);
             this.dtGridMainNP.TabIndex = 36;
+            this.dtGridMainNP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridMainNP_CellContentClick);
             // 
             // errorProvider1
             // 

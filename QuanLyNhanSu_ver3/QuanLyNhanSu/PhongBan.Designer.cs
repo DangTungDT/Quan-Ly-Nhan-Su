@@ -118,6 +118,7 @@
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -205,12 +206,15 @@
             // 
             // dtGridMainPB
             // 
+            this.dtGridMainPB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridMainPB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridMainPB.Dock = System.Windows.Forms.DockStyle.Right;
             this.dtGridMainPB.Location = new System.Drawing.Point(526, 77);
             this.dtGridMainPB.Margin = new System.Windows.Forms.Padding(5);
+            this.dtGridMainPB.MultiSelect = false;
             this.dtGridMainPB.Name = "dtGridMainPB";
             this.dtGridMainPB.RowHeadersWidth = 51;
+            this.dtGridMainPB.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtGridMainPB.Size = new System.Drawing.Size(386, 473);
             this.dtGridMainPB.TabIndex = 9;
             this.dtGridMainPB.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridMainPB_CellContentClick);
