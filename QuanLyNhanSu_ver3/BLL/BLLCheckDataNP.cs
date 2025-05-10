@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace BLL
@@ -101,6 +102,24 @@ namespace BLL
             {
                 throw new Exception("Lỗi xóa nghỉ phép: " + ex.Message);
             }
+        }
+
+        //Lấy các nghỉ phép theo id người dùng và ở trạng thái yêu cầu (0)
+        public IQueryable getAllNghiPhepDangYeuCau(string IDEmployee)
+        {
+            return qlns.getAllNghiPhepDangYeuCau(IDEmployee);
+        }
+
+
+
+        public IQueryable getNghiPhepTheoPhanQuyen(string IDEmployee)
+        {
+            return qlns.getNghiPhepTheoPhanQuyen(IDEmployee);
+        }
+
+        public IQueryable getNghiPhepByID(string IDEmployee)
+        {
+            return qlns.getAllNghiPhepByID(IDEmployee);
         }
     }
 }

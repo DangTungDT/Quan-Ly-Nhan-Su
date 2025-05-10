@@ -78,7 +78,6 @@ namespace DAL
             try
             {
                 var NhanVien = qlns.NhanViens.FirstOrDefault(p => p.id == nv.ID);
-                NhanVien.id = nv.ID;
                 NhanVien.idChucVu = nv.IDChucVu;
                 NhanVien.idLuong = nv.IDLuong;
                 NhanVien.idPhongBan = nv.IDPhongBan;
@@ -143,6 +142,12 @@ namespace DAL
         public string ConvertNameToIDPhongBan(string text)
         {
             return getAllPBan().Where(p => p.TenPhongBan == text).Select(p => p.id).FirstOrDefault();
+        }
+
+        //Lấy tên nhân viên theo id
+        public string getNameByID(string id)
+        {
+            return qlns.NhanViens.Where(x=> x.id == id).Select(x=> x.TenNhanVien).FirstOrDefault();
         }
 
     }

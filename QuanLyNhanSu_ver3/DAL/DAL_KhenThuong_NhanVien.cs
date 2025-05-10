@@ -74,7 +74,6 @@ namespace DAL
                 KhenThuong_NhanVien valueDelete = (from item in db.KhenThuong_NhanViens
                                                   where item.idNhanVien == idNV && item.idKhenThuong == idKT
                                                   select item).FirstOrDefault();
-
                 db.KhenThuong_NhanViens.DeleteOnSubmit(valueDelete);
                 db.SubmitChanges(); return true;
             }catch(Exception ex)

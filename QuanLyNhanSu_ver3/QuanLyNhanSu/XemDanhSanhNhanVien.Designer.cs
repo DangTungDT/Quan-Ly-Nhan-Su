@@ -66,7 +66,9 @@
             this.dgvNVien.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvNVien.Location = new System.Drawing.Point(0, 177);
             this.dgvNVien.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dgvNVien.MultiSelect = false;
             this.dgvNVien.Name = "dgvNVien";
+            this.dgvNVien.ReadOnly = true;
             this.dgvNVien.RowHeadersWidth = 51;
             this.dgvNVien.RowTemplate.Height = 24;
             this.dgvNVien.Size = new System.Drawing.Size(1067, 325);
@@ -99,7 +101,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Location = new System.Drawing.Point(279, 122);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(319, 22);
             this.txtTimKiem.TabIndex = 103;
@@ -115,7 +117,7 @@
             this.Controls.Add(this.dgvNVien);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "XemDanhSanhNhanVien";
             this.Text = "XemDanhSanhNhanVien";
             this.Load += new System.EventHandler(this.XemDanhSanhNhanVien_Load);

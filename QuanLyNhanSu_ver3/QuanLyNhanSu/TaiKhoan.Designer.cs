@@ -189,6 +189,7 @@
             this.dgvMainTK.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMainTK.MultiSelect = false;
             this.dgvMainTK.Name = "dgvMainTK";
+            this.dgvMainTK.ReadOnly = true;
             this.dgvMainTK.RowHeadersWidth = 51;
             this.dgvMainTK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMainTK.Size = new System.Drawing.Size(836, 185);

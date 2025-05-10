@@ -45,6 +45,11 @@ namespace QuanLyNhanSu
                 if (CheckEmptyControl())
                 {
                     var IDNhanVien = !string.IsNullOrWhiteSpace(txtTK.Text) ? txtTK.Text.ToUpper().Trim() : string.Empty;
+                    if(tk.CheckGetAllTKhoan().Where(p => p.IDNhanVien == IDNhanVien).FirstOrDefault() == null) 
+                    { 
+                       MessageBox.Show("Đăng nhập thất bại");
+                        return;
+                    }
                     var account = tk.CheckGetAllTKhoan().Where(p => p.IDNhanVien == IDNhanVien).FirstOrDefault();
                     var taiKhoan = account.IDNhanVien;
                     var matKhau = account.MatKhau;

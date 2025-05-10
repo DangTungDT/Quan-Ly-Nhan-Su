@@ -57,7 +57,7 @@
             this.panel1.Location = new System.Drawing.Point(14, 14);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(898, 63);
+            this.panel1.Size = new System.Drawing.Size(910, 63);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -70,7 +70,7 @@
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(898, 63);
+            this.label10.Size = new System.Drawing.Size(910, 63);
             this.label10.TabIndex = 16;
             this.label10.Text = "PHÒNG BAN";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,11 +88,11 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.rtMoTa);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(14, 77);
+            this.panel2.Location = new System.Drawing.Point(14, 14);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(0, 14, 14, 0);
-            this.panel2.Size = new System.Drawing.Size(512, 473);
+            this.panel2.Size = new System.Drawing.Size(910, 536);
             this.panel2.TabIndex = 10;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -209,7 +209,7 @@
             this.dtGridMainPB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridMainPB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridMainPB.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dtGridMainPB.Location = new System.Drawing.Point(526, 77);
+            this.dtGridMainPB.Location = new System.Drawing.Point(538, 77);
             this.dtGridMainPB.Margin = new System.Windows.Forms.Padding(5);
             this.dtGridMainPB.MultiSelect = false;
             this.dtGridMainPB.Name = "dtGridMainPB";
@@ -227,10 +227,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 564);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(938, 564);
             this.Controls.Add(this.dtGridMainPB);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "PhongBan";

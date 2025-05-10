@@ -39,7 +39,36 @@ namespace QuanLyNhanSu
 
         private void btnChamCong_Click(object sender, EventArgs e)
         {
+            if(!bll.CheckVauleChamCong(txtID.Text, dtpNgayChamCong.Value))
+            {
+                int ketQua = bll.AddChamCong(new DTOChamCongNhanVien(dtpNgayChamCong.Value, txtID.Text)); 
+                switch(ketQua)
+                {
+                    //Trường hợp bị lỗi truy xuất dữ liệu (DAL)
+                    case -2:
 
+                        MessageBox.Show("Lỗi không thể lấy dữ liệu !", "Thông báo");
+                        return;
+                        
+                    //Trường hợp dữ liệu có vấn đề (lỗi)
+                    case -1:
+                        MessageBox.Show("Lỗi dữ liệu đầu vào !", "Thông báo");
+                        return;
+                    //Trường hợp thêm thành công
+                    case 0:
+                        MessageBox.Show("Chấm công thành công !", "Thông báo");
+                        return;
+                    //Trường hợp đã chấm công từ trước
+                    case 1:
+                        MessageBox.Show("Bạn đã chấm công ngày hôm nay rồi !", "Thông báo");
+                        return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn đã chấm công ngày hôm nay rồi !", "Thông báo");
+                return;
+            }
         }
     }
 }

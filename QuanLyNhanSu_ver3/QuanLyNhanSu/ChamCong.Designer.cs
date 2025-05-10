@@ -70,6 +70,8 @@
             // 
             // cbbNVien
             // 
+            this.cbbNVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbNVien.FormattingEnabled = true;
             this.cbbNVien.Location = new System.Drawing.Point(219, 74);
             this.cbbNVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -159,6 +161,8 @@
             // 
             // dtpNgayChamCong
             // 
+            this.dtpNgayChamCong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpNgayChamCong.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayChamCong.Location = new System.Drawing.Point(219, 124);
             this.dtpNgayChamCong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

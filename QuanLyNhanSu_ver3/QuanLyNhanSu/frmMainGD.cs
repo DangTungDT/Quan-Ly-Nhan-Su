@@ -15,6 +15,16 @@ namespace QuanLyNhanSu
         //Biến toàn cục
         string IDNhanVien;
 
+        private void FormChild(Form form)
+        {
+            foreach (var item in this.MdiChildren)
+            {
+                item.Close();
+            }
+            form.MdiParent = this;
+            form.Show();
+        }
+
         public frmMainGD(string id)
         {
             InitializeComponent();
@@ -28,16 +38,12 @@ namespace QuanLyNhanSu
        
         private void danhSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmInDanhSachNhanVien f = new frmInDanhSachNhanVien();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new frmInDanhSachNhanVien());
         }
 
         private void danhSáchPhòngBanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmInDanhSachPhongBan f = new frmInDanhSachPhongBan();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new frmInDanhSachPhongBan());
         }
 
         private void frmMainGD_Load(object sender, EventArgs e)
@@ -47,9 +53,7 @@ namespace QuanLyNhanSu
 
         private void chấmCôngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmChamCongNhanVien f = new frmChamCongNhanVien(IDNhanVien);
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new frmChamCongNhanVien(IDNhanVien));
         }
 
         private void frmMainGD_FormClosing(object sender, FormClosingEventArgs e)
@@ -67,23 +71,17 @@ namespace QuanLyNhanSu
 
         private void khenThưởngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmKhenThuong_NhanVien f = new frmKhenThuong_NhanVien();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new frmKhenThuong_NhanVien());
         }
 
         private void kỷLuậtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmKyLuat_NhanVien f = new frmKyLuat_NhanVien();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new frmKyLuat_NhanVien());
         }
 
         private void đánhGiáNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DanhGiaNhanVien f = new DanhGiaNhanVien();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new DanhGiaNhanVien());
         }
 
         private void chứcNăngKhácToolStripMenuItem_Click(object sender, EventArgs e)
@@ -93,16 +91,12 @@ namespace QuanLyNhanSu
 
         private void tạosửaDựÁnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DuAn f = new DuAn();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new DuAn());
         }
 
         private void thêmNhânViênVàoDựÁnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DuAn_NhanVien f = new DuAn_NhanVien();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new DuAn_NhanVien());
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
@@ -112,37 +106,27 @@ namespace QuanLyNhanSu
 
         private void tàiKhoảnToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            TaiKhoan f = new TaiKhoan();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new TaiKhoan());
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            frmChiTietLuong f = new frmChiTietLuong();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new frmChiTietLuong());
         }
 
         private void lươngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Luong f = new Luong();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new Luong());
         }
 
         private void phòngBanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PhongBan f = new PhongBan();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new PhongBan());
         }
 
         private void chấmCôngToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ChamCong f = new ChamCong();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new ChamCong());
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -157,9 +141,27 @@ namespace QuanLyNhanSu
 
         private void xemDanhSachsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            XemDanhSanhNhanVien f = new XemDanhSanhNhanVien();
-            f.MdiParent = this;
-            f.Show();
+            FormChild(new XemDanhSanhNhanVien());
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormChild(new frmXinNghiPhep(IDNhanVien));
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormChild(new frmInThongTinCaNhan(IDNhanVien));
+        }
+
+        private void duyệtNghỉPhépToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormChild(new frmDuyetNghiPhep(IDNhanVien));
+        }
+
+        private void xemNghỉPhépToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormChild(new frmXemNghiPhep(IDNhanVien));
         }
     }
 }

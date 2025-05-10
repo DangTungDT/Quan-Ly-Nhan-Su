@@ -1,4 +1,6 @@
-﻿namespace QuanLyNhanSu
+﻿using QuanLyNhanSu.report;
+
+namespace QuanLyNhanSu
 {
     partial class frmInDanhSachPhongBan
     {
@@ -29,7 +31,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.rptDanhSachPhongBan1 = new QuanLyNhanSu.rptDanhSachPhongBan();
+            this.rptDanhSachPhongBan1 = new QuanLyNhanSu.report.rptDanhSachPhongBan();
             this.SuspendLayout();
             // 
             // crystalReportViewer1

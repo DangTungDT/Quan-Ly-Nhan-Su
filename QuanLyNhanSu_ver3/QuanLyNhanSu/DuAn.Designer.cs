@@ -81,19 +81,23 @@
             // 
             // cbbTrangThai
             // 
+            this.cbbTrangThai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbTrangThai.FormattingEnabled = true;
             this.cbbTrangThai.Items.AddRange(new object[] {
             "Chưa thực hiện",
             "Đang thực hiện",
             "Hoàn thành"});
             this.cbbTrangThai.Location = new System.Drawing.Point(197, 177);
-            this.cbbTrangThai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbTrangThai.Margin = new System.Windows.Forms.Padding(4);
             this.cbbTrangThai.Name = "cbbTrangThai";
             this.cbbTrangThai.Size = new System.Drawing.Size(231, 24);
             this.cbbTrangThai.TabIndex = 90;
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(31, 79);
@@ -104,6 +108,8 @@
             // 
             // txtIdDuAn
             // 
+            this.txtIdDuAn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtIdDuAn.Location = new System.Drawing.Point(197, 79);
             this.txtIdDuAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIdDuAn.Name = "txtIdDuAn";
@@ -112,6 +118,8 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Location = new System.Drawing.Point(592, 334);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -124,6 +132,8 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEdit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(445, 334);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -136,6 +146,8 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(293, 334);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -148,6 +160,8 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(155, 334);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -160,8 +174,10 @@
             // 
             // rtLMoTa
             // 
+            this.rtLMoTa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rtLMoTa.Location = new System.Drawing.Point(197, 230);
-            this.rtLMoTa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtLMoTa.Margin = new System.Windows.Forms.Padding(4);
             this.rtLMoTa.Name = "rtLMoTa";
             this.rtLMoTa.Size = new System.Drawing.Size(641, 74);
             this.rtLMoTa.TabIndex = 83;
@@ -169,6 +185,8 @@
             // 
             // label
             // 
+            this.label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(35, 230);
             this.label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -179,6 +197,8 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(507, 183);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -189,6 +209,8 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(31, 177);
@@ -199,9 +221,11 @@
             // 
             // dtKetThuc
             // 
+            this.dtKetThuc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtKetThuc.Location = new System.Drawing.Point(627, 126);
-            this.dtKetThuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtKetThuc.Margin = new System.Windows.Forms.Padding(4);
             this.dtKetThuc.Name = "dtKetThuc";
             this.dtKetThuc.Size = new System.Drawing.Size(211, 22);
             this.dtKetThuc.TabIndex = 78;
@@ -209,9 +233,11 @@
             // 
             // dtBatDau
             // 
+            this.dtBatDau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtBatDau.Location = new System.Drawing.Point(627, 76);
-            this.dtBatDau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtBatDau.Margin = new System.Windows.Forms.Padding(4);
             this.dtBatDau.Name = "dtBatDau";
             this.dtBatDau.Size = new System.Drawing.Size(211, 22);
             this.dtBatDau.TabIndex = 79;
@@ -219,6 +245,8 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(507, 126);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -229,6 +257,8 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(507, 78);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -239,6 +269,8 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 126);
@@ -249,6 +281,8 @@
             // 
             // dtpNgayTao
             // 
+            this.dtpNgayTao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpNgayTao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayTao.Location = new System.Drawing.Point(627, 175);
             this.dtpNgayTao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -258,6 +292,8 @@
             // 
             // txtTenDuAn
             // 
+            this.txtTenDuAn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenDuAn.Location = new System.Drawing.Point(197, 126);
             this.txtTenDuAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenDuAn.Name = "txtTenDuAn";
@@ -289,7 +325,7 @@
             this.Controls.Add(this.txtTenDuAn);
             this.Controls.Add(this.dgvDuAn);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DuAn";
             this.Text = "DuAn";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DuAn_FormClosing);

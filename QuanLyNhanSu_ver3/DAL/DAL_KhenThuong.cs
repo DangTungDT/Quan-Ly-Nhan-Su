@@ -32,10 +32,14 @@ namespace DAL
         {
             try
             {
-                KhenThuong khenThuongBiXoa = db.KhenThuongs.Where(x => x.id == dto.Id).Select(x => x).FirstOrDefault();
-                db.KhenThuongs.DeleteOnSubmit(khenThuongBiXoa);
-
-                return true;
+                //Kiểm tra trường hợp id không tồn tài
+                if(db.KhenThuongs.Where(x=> x.id == dto.Id).FirstOrDefault() != null)
+                {
+                    KhenThuong khenThuongBiXoa = db.KhenThuongs.Where(x => x.id == dto.Id).Select(x => x).FirstOrDefault();
+                    db.KhenThuongs.DeleteOnSubmit(khenThuongBiXoa);
+                    return true;
+                }
+                return false;
             }
             catch (Exception ex)
             {
@@ -74,12 +78,20 @@ namespace DAL
         {
             try
             {
-                KhenThuong oldKhenThuong = db.KhenThuongs.Single(x => x.id == dto.Id);
-                oldKhenThuong.ngayKhenThuong = dto.NgayKhenThuong;
-                oldKhenThuong.SoTienThuong = dto.SoTienThuong;
-                oldKhenThuong.LyDo = dto.LyDo;
-                db.SubmitChanges();
-                return true;
+                //Kiểm tra trường hợp không tìm thấy id
+                if(db.KhenThuongs.Where(x=> x.id == dto.Id).First() != null)
+                {
+                    KhenThuong oldKhenThuong = db.KhenThuongs.Single(x => x.id == dto.Id);
+                    oldKhenThuong.ngayKhenThuong = dto.NgayKhenThuong;
+                    oldKhenThuong.SoTienThuong = dto.SoTienThuong;
+                    oldKhenThuong.LyDo = dto.LyDo;
+                    db.SubmitChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
 
             }
             catch

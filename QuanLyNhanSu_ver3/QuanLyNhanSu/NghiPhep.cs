@@ -30,6 +30,10 @@ namespace QuanLyNhanSu
             cbLoaiNghi.DataSource = np.CheckGetAllNPhep();
             cbLoaiNghi.DisplayMember = "LoaiNghiPhep";
             cbLoaiNghi.ValueMember = "id";
+
+            cobTrangThai.Items.Add("Đang yêu cầu");
+            cobTrangThai.Items.Add("Đã duyệt");
+            cobTrangThai.Items.Add("Bị từ chối");
         }
 
         // Nhap du lieu them nghi phep nhan vien
@@ -39,7 +43,7 @@ namespace QuanLyNhanSu
             {
                 try
                 {
-                    if (np.CheckAddNghiPhep(new DTONghiPhep(txtIDNV.Text, rtLyDo.Text, cbLoaiNghi.Text, dtBatDau.Value, dtKetThuc.Value)))
+                    if (np.CheckAddNghiPhep(new DTONghiPhep(txtIDNV.Text, rtLyDo.Text, cbLoaiNghi.Text, dtBatDau.Value, dtKetThuc.Value, cobTrangThai.Text)))
                     {
                         dtGridMainNP.DataSource = np.CheckGetAllNPhep();
                         MessageBox.Show("Thêm dữ liệu thành công !!!");
@@ -62,7 +66,7 @@ namespace QuanLyNhanSu
             {
                 try
                 {
-                    if (np.CheckUpdateNghiPhep(new DTONghiPhep(int.Parse(txtID.Text), txtIDNV.Text, rtLyDo.Text, cbLoaiNghi.Text, dtBatDau.Value, dtKetThuc.Value)))
+                    if (np.CheckUpdateNghiPhep(new DTONghiPhep(int.Parse(txtID.Text), txtIDNV.Text, rtLyDo.Text, cbLoaiNghi.Text, dtBatDau.Value, dtKetThuc.Value, cobTrangThai.Text)))
                     {
                         dtGridMainNP.DataSource = np.CheckGetAllNPhep();
                         MessageBox.Show("Sửa dữ liệu thành công !!!");
@@ -160,11 +164,12 @@ namespace QuanLyNhanSu
             if (e != null && e.RowIndex > -1)
             {
                 txtID.Text = dtGridMainNP.Rows[e.RowIndex].Cells[0].Value.ToString();
-                txtIDNV.Text = dtGridMainNP.Rows[e.RowIndex].Cells[1].Value.ToString();
-                rtLyDo.Text = dtGridMainNP.Rows[e.RowIndex].Cells[2].Value.ToString();
-                cbLoaiNghi.Text = dtGridMainNP.Rows[e.RowIndex].Cells[3].Value.ToString();
-                dtBatDau.Value = DateTime.Parse(dtGridMainNP.Rows[e.RowIndex].Cells[4].Value.ToString());
-                dtKetThuc.Value = DateTime.Parse(dtGridMainNP.Rows[e.RowIndex].Cells[5].Value.ToString());
+                cobTrangThai.Text = dtGridMainNP.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtIDNV.Text = dtGridMainNP.Rows[e.RowIndex].Cells[2].Value.ToString();
+                rtLyDo.Text = dtGridMainNP.Rows[e.RowIndex].Cells[3].Value.ToString();
+                cbLoaiNghi.Text = dtGridMainNP.Rows[e.RowIndex].Cells[4].Value.ToString();
+                dtBatDau.Value = DateTime.Parse(dtGridMainNP.Rows[e.RowIndex].Cells[5].Value.ToString());
+                dtKetThuc.Value = DateTime.Parse(dtGridMainNP.Rows[e.RowIndex].Cells[6].Value.ToString());
             }
         }
     }

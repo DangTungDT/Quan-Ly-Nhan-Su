@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuanLyNhanSu {
+namespace QuanLyNhanSu.report {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace QuanLyNhanSu {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rptDanhSachNV : ReportClass {
+    public class rptThongTinNhanVien : ReportClass {
         
-        public rptDanhSachNV() {
+        public rptThongTinNhanVien() {
         }
         
         public override string ResourceName {
             get {
-                return "rptDanhSachNV.rpt";
+                return "rptThongTinNhanVien.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace QuanLyNhanSu {
         
         public override string FullResourceName {
             get {
-                return "QuanLyNhanSu.rptDanhSachNV.rpt";
+                return "QuanLyNhanSu.report.rptThongTinNhanVien.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace QuanLyNhanSu {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace QuanLyNhanSu {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,7 +82,7 @@ namespace QuanLyNhanSu {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
             get {
                 return this.ReportDefinition.Sections[4];
             }
@@ -90,25 +90,17 @@ namespace QuanLyNhanSu {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.Shared.IParameterField Parameter_pIDNhanVien {
             get {
-                return this.ReportDefinition.Sections[5];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
-            get {
-                return this.ReportDefinition.Sections[6];
+                return this.DataDefinition.ParameterFields[0];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrptDanhSachNV : Component, ICachedReport {
+    public class CachedrptThongTinNhanVien : Component, ICachedReport {
         
-        public CachedrptDanhSachNV() {
+        public CachedrptThongTinNhanVien() {
         }
         
         [Browsable(false)]
@@ -145,7 +137,7 @@ namespace QuanLyNhanSu {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rptDanhSachNV rpt = new rptDanhSachNV();
+            rptThongTinNhanVien rpt = new rptThongTinNhanVien();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -70,6 +70,8 @@
             // 
             // txtTenChucVu
             // 
+            this.txtTenChucVu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenChucVu.Location = new System.Drawing.Point(172, 154);
             this.txtTenChucVu.Name = "txtTenChucVu";
             this.txtTenChucVu.Size = new System.Drawing.Size(230, 22);
@@ -131,6 +133,8 @@
             // 
             // txtId
             // 
+            this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtId.Location = new System.Drawing.Point(172, 96);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(230, 22);

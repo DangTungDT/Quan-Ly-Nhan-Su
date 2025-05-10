@@ -46,7 +46,7 @@ namespace QuanLyNhanSu
         private void XemDanhSanhNhanVien_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult r;
-            r = MessageBox.Show("Do you want to close?", "Exit",
+            r = MessageBox.Show("Bạn có muốn thoát ?", "Thông báo",
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Question,
             MessageBoxDefaultButton.Button1);

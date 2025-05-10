@@ -68,6 +68,8 @@
             // 
             // txtMK
             // 
+            this.txtMK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMK.Location = new System.Drawing.Point(206, 140);
             this.txtMK.Margin = new System.Windows.Forms.Padding(4);
             this.txtMK.Multiline = true;
@@ -77,6 +79,8 @@
             // 
             // txtTK
             // 
+            this.txtTK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTK.Location = new System.Drawing.Point(206, 92);
             this.txtTK.Margin = new System.Windows.Forms.Padding(4);
             this.txtTK.Multiline = true;

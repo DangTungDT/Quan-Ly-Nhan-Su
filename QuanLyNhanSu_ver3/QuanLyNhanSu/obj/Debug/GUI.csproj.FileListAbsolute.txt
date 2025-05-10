@@ -167,3 +167,7 @@ D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debu
 D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\GUI.csproj.Up2Date
 D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmInThongTinCaNhan.resources
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmXinNghiPhep.resources
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDuyetNghiPhep.resources
+D:\HocKi4\.Net\DoAn\main\Quan-Ly-Nhan-Su\QuanLyNhanSu_ver3\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmXemNghiPhep.resources

@@ -64,13 +64,37 @@
     <Compile Include="DuAn_NhanVien.Designer.cs">
       <DependentUpon>DuAn_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDuyetNghiPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuyetNghiPhep.Designer.cs">
+      <DependentUpon>frmDuyetNghiPhep.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInDanhSachPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInDanhSachPhongBan.Designer.cs">
       <DependentUpon>frmInDanhSachPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="rptDanhSachNV.cs">
+    <Compile Include="frmInThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInThongTinCaNhan.Designer.cs">
+      <DependentUpon>frmInThongTinCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemNghiPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemNghiPhep.Designer.cs">
+      <DependentUpon>frmXemNghiPhep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXinNghiPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXinNghiPhep.Designer.cs">
+      <DependentUpon>frmXinNghiPhep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\rptDanhSachNV.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptDanhSachNV.rpt</DependentUpon>
@@ -192,13 +216,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rptDanhSachPhongBan.cs">
+    <Compile Include="report\rptDanhSachPhongBan.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptDanhSachPhongBan.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rptThongTinNhanVien.cs">
+    <Compile Include="report\rptThongTinNhanVien.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptThongTinNhanVien.rpt</DependentUpon>
@@ -222,10 +246,22 @@
     <EmbeddedResource Include="DuAn_NhanVien.resx">
       <DependentUpon>DuAn_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDuyetNghiPhep.resx">
+      <DependentUpon>frmDuyetNghiPhep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInDanhSachPhongBan.resx">
       <DependentUpon>frmInDanhSachPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptDanhSachNV.rpt">
+    <EmbeddedResource Include="frmInThongTinCaNhan.resx">
+      <DependentUpon>frmInThongTinCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemNghiPhep.resx">
+      <DependentUpon>frmXemNghiPhep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXinNghiPhep.resx">
+      <DependentUpon>frmXinNghiPhep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\rptDanhSachNV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDanhSachNV.cs</LastGenOutput>
     </EmbeddedResource>
@@ -295,11 +331,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="rptDanhSachPhongBan.rpt">
+    <EmbeddedResource Include="report\rptDanhSachPhongBan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDanhSachPhongBan.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptThongTinNhanVien.rpt">
+    <EmbeddedResource Include="report\rptThongTinNhanVien.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptThongTinNhanVien.cs</LastGenOutput>
     </EmbeddedResource>
@@ -334,6 +370,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

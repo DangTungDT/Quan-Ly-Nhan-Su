@@ -49,6 +49,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cobTrangThai = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMainNP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -83,7 +85,7 @@
             this.dtGridMainNP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridMainNP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridMainNP.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtGridMainNP.Location = new System.Drawing.Point(13, 313);
+            this.dtGridMainNP.Location = new System.Drawing.Point(13, 431);
             this.dtGridMainNP.Margin = new System.Windows.Forms.Padding(4);
             this.dtGridMainNP.MultiSelect = false;
             this.dtGridMainNP.Name = "dtGridMainNP";
@@ -185,7 +187,7 @@
             // 
             // rtLyDo
             // 
-            this.rtLyDo.Location = new System.Drawing.Point(178, 207);
+            this.rtLyDo.Location = new System.Drawing.Point(179, 319);
             this.rtLyDo.Margin = new System.Windows.Forms.Padding(4);
             this.rtLyDo.Name = "rtLyDo";
             this.rtLyDo.Size = new System.Drawing.Size(581, 101);
@@ -246,7 +248,7 @@
             // label
             // 
             this.label.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(67, 207);
+            this.label.Location = new System.Drawing.Point(68, 319);
             this.label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(113, 23);
@@ -263,11 +265,34 @@
             this.label2.TabIndex = 51;
             this.label2.Text = "Loại nghỉ:";
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(62, 230);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 23);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "Trạng thái :";
+            // 
+            // cobTrangThai
+            // 
+            this.cobTrangThai.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cobTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cobTrangThai.FormattingEnabled = true;
+            this.cobTrangThai.Location = new System.Drawing.Point(178, 229);
+            this.cobTrangThai.Margin = new System.Windows.Forms.Padding(4);
+            this.cobTrangThai.Name = "cobTrangThai";
+            this.cobTrangThai.Size = new System.Drawing.Size(211, 24);
+            this.cobTrangThai.TabIndex = 61;
+            // 
             // NghiPhep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 510);
+            this.ClientSize = new System.Drawing.Size(1067, 628);
+            this.Controls.Add(this.cobTrangThai);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtIDNV);
             this.Controls.Add(this.btnThoat);
@@ -323,5 +348,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cobTrangThai;
+        private System.Windows.Forms.Label label6;
     }
 }

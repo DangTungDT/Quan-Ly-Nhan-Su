@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuanLyNhanSu {
+namespace QuanLyNhanSu.report {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace QuanLyNhanSu {
         
         public override string FullResourceName {
             get {
-                return "QuanLyNhanSu.rptDanhSachPhongBan.rpt";
+                return "QuanLyNhanSu.report.rptDanhSachPhongBan.rpt";
             }
             set {
                 // Do nothing

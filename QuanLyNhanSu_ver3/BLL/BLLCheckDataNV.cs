@@ -183,6 +183,11 @@ namespace BLL
             }
         }
 
+        public string getNameByID(string id)
+        {
+            return qlns.getNameByID(id);
+        }
+
 
     }
 }

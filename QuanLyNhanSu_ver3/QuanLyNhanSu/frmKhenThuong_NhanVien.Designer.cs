@@ -49,7 +49,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1398, 50);
+            this.label1.Size = new System.Drawing.Size(1435, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Khen Thưởng Cho Nhân Viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -90,12 +90,12 @@
             this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvNhanVien.Location = new System.Drawing.Point(0, 374);
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 388);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1398, 208);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1435, 208);
             this.dgvNhanVien.TabIndex = 3;
             // 
             // dgvNhanVienKhenThuong
@@ -103,12 +103,12 @@
             this.dgvNhanVienKhenThuong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNhanVienKhenThuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVienKhenThuong.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvNhanVienKhenThuong.Location = new System.Drawing.Point(774, 50);
+            this.dgvNhanVienKhenThuong.Location = new System.Drawing.Point(811, 50);
             this.dgvNhanVienKhenThuong.Name = "dgvNhanVienKhenThuong";
             this.dgvNhanVienKhenThuong.RowHeadersWidth = 51;
             this.dgvNhanVienKhenThuong.RowTemplate.Height = 24;
             this.dgvNhanVienKhenThuong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVienKhenThuong.Size = new System.Drawing.Size(624, 324);
+            this.dgvNhanVienKhenThuong.Size = new System.Drawing.Size(624, 338);
             this.dgvNhanVienKhenThuong.TabIndex = 4;
             this.dgvNhanVienKhenThuong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVienKhenThuong_CellContentClick);
             // 
@@ -158,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1398, 582);
+            this.ClientSize = new System.Drawing.Size(1435, 596);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
