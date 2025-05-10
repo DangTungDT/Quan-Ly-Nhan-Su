@@ -223,6 +223,14 @@ Create table ChiTietLuong
 	idLuong int,
 	idNhanVien varchar(10),
 )
+
+alter table NghiPhep
+add TrangThai nvarchar(50);
+go
+alter table NghiPhep
+add constraint df_NghiPhep_TrangThai default N'Đang yêu cầu' for TrangThai;
+go
+
 ----Create Foreign Key constraint
 --Table ChiTietLuong
 alter table ChiTietLuong
